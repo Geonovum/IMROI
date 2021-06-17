@@ -1,11 +1,11 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMROI-conceptueel-1.0-0-20210617-20210617-135308 imvertor 1.64.2-->
+   <!--MIMCM-IMROI-conceptueel-1.0-0-20210617-20210617-140714 imvertor 1.64.2-->
    <section id="">
       <h3>Objecttypen   </h3>
-      <a class="anchor" id="graph_EAID_0C9C6638_7D3D_4b8f_B786_8D396E359684"></a><a class="anchor" id="global_class_IMROI_IMROIObject"></a><section id="global_class_IMROI_IMROIObject">
-         <h4>   IMROI-object</h4>
+      <a class="anchor" id="graph_EAID_0C9C6638_7D3D_4b8f_B786_8D396E359684"></a><a class="anchor" id="global_class_IMROI_RepressiefObject"></a><section id="global_class_IMROI_RepressiefObject">
+         <h4>   Repressief Object</h4>
          
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -13,7 +13,16 @@
             <tbody>
                <tr>
                   <th>Naam</th>
-                  <td>IMROI-object</td>
+                  <td>Repressief Object</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     <p>Voor de hulpdiensten relevant complex object (gebouwen, constructies, verharding,
+                        spoorbaan, water en begroeiing) die samen een functionele eenheid vormen en die een
+                        aantal voorzieningen kunnen delen. </p>
+                     </td>
                </tr>
             </tbody>
          </table>
@@ -34,9 +43,12 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_identificatie">identificatie</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_identificatie">identificatie</a>
                      </td>
-                  <td></td>
+                  <td>
+                     
+                     <p>Identificatie van het Repressief object </p>
+                     </td>
                   <td>
                      Integer
                      </td>
@@ -44,7 +56,7 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_geometrie">geometrie</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_geometrie">geometrie</a>
                      </td>
                   <td></td>
                   <td>
@@ -54,7 +66,20 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_formeleNaam">formele naam</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_formeleNaam">formele naam</a>
+                     </td>
+                  <td>
+                     
+                     <p>Naam (informeel) Repressief object </p>
+                     </td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_bijzonderheden">bijzonderheden</a>
                      </td>
                   <td></td>
                   <td>
@@ -64,17 +89,7 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_bijzonderheden">bijzonderheden</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     CHARACTERSTRING
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_maximaalAantalPersonen">maximaal aantal personen</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_maximaalAantalPersonen">maximaal aantal personen</a>
                      </td>
                   <td></td>
                   <td>
@@ -84,7 +99,7 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_maxaantalNietzPersonen">maxaantal nietz? personen</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_maxaantalNietzPersonen">maxaantal nietz? personen</a>
                      </td>
                   <td></td>
                   <td>
@@ -94,7 +109,7 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_bron">bron</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_bron">bron</a>
                      </td>
                   <td></td>
                   <td>
@@ -104,7 +119,7 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMROI_IMROIObject_brontabel">brontabel</a>
+                     <a class="link" href="#detail_attribute_IMROI_RepressiefObject_brontabel">brontabel</a>
                      </td>
                   <td></td>
                   <td>
@@ -184,10 +199,10 @@
                </tr>
                <tr>
                   <td>
-                     IMROI-object
+                     Repressief Object
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdeFotografie">heeft: gerelateerdeFotografie</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdeFotografie">heeft: gerelateerdeFotografie</a>
                      
                      
                      <a class="link" href="#global_class_IMROI_Fotografie">??? Fotografie ???</a>
@@ -198,10 +213,10 @@
                </tr>
                <tr>
                   <td>
-                     IMROI-object
+                     Repressief Object
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdeBodemgesteldheidtype">heeft: gerelateerdeBodemgesteldheidtype</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdeBodemgesteldheidtype">heeft: gerelateerdeBodemgesteldheidtype</a>
                      
                      
                      <a class="link" href="#global_class_IMROI_BodemgesteldheidType">Bodemgesteldheid type</a>
@@ -212,10 +227,10 @@
                </tr>
                <tr>
                   <td>
-                     IMROI-object
+                     Repressief Object
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdBRobject">hoort bij: gerelateerdBRobject</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdBRobject">hoort bij: gerelateerdBRobject</a>
                      
                      
                      <a class="link" href="#global_class_IMROI_BasisregistratieObject">Basisregistratie-object</a>
@@ -233,7 +248,7 @@
                      
                      <a class="link" href="#detail_association_IMROI_AbstractKoppelObject_gerelateerdObject">hoort bij: gerelateerdObject</a>
                      
-                     IMROI-object
+                     Repressief Object
                      [ 1 ]
                      </td>
                   <td></td>
@@ -298,11 +313,11 @@
                <tr>
                   <td>
                      
-                     <a class="link" href="#global_class_IMROI_IMROIObject">IMROI-object</a>
+                     <a class="link" href="#global_class_IMROI_RepressiefObject">Repressief Object</a>
                      
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdBRobject">hoort bij: gerelateerdBRobject</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdBRobject">hoort bij: gerelateerdBRobject</a>
                      
                      Basisregistratie-object
                      [ 1 ]
@@ -389,11 +404,11 @@
                <tr>
                   <td>
                      
-                     <a class="link" href="#global_class_IMROI_IMROIObject">IMROI-object</a>
+                     <a class="link" href="#global_class_IMROI_RepressiefObject">Repressief Object</a>
                      
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdeBodemgesteldheidtype">heeft: gerelateerdeBodemgesteldheidtype</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdeBodemgesteldheidtype">heeft: gerelateerdeBodemgesteldheidtype</a>
                      
                      Bodemgesteldheid type
                      [ 1 ]
@@ -460,11 +475,11 @@
                <tr>
                   <td>
                      
-                     <a class="link" href="#global_class_IMROI_IMROIObject">IMROI-object</a>
+                     <a class="link" href="#global_class_IMROI_RepressiefObject">Repressief Object</a>
                      
                      [ 1 ]
                      
-                     <a class="link" href="#detail_association_IMROI_IMROIObject_gerelateerdeFotografie">heeft: gerelateerdeFotografie</a>
+                     <a class="link" href="#detail_association_IMROI_RepressiefObject_gerelateerdeFotografie">heeft: gerelateerdeFotografie</a>
                      
                      ??? Fotografie ???
                      [ 1 ]
@@ -564,7 +579,7 @@
                      <a class="link" href="#detail_association_IMROI_AbstractKoppelObject_gerelateerdObject">hoort bij: gerelateerdObject</a>
                      
                      
-                     <a class="link" href="#global_class_IMROI_IMROIObject">IMROI-object</a>
+                     <a class="link" href="#global_class_IMROI_RepressiefObject">Repressief Object</a>
                      
                      [ 1 ]
                      </td>
@@ -892,10 +907,10 @@
       
       <section id="">
          <h4>Objecttype details  </h4>
-         <a class="anchor" id="detail_class_IMROI_IMROIObject"></a><section id="detail_class_IMROI_IMROIObject">
-            <h5>   IMROI-object</h5>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_identificatie"></a><section id="detail_attribute_IMROI_IMROIObject_identificatie">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> identificatie</h6>
+         <a class="anchor" id="detail_class_IMROI_RepressiefObject"></a><section id="detail_class_IMROI_RepressiefObject">
+            <h5>   Repressief Object</h5>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_identificatie"></a><section id="detail_attribute_IMROI_RepressiefObject_identificatie">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> identificatie</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -904,6 +919,13 @@
                      <tr>
                         <th>Naam</th>
                         <td>identificatie</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Identificatie van het Repressief object </p>
+                           </td>
                      </tr>
                      <tr>
                         <th>Toelichting</th>
@@ -929,8 +951,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_geometrie"></a><section id="detail_attribute_IMROI_IMROIObject_geometrie">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> geometrie</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_geometrie"></a><section id="detail_attribute_IMROI_RepressiefObject_geometrie">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> geometrie</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -964,8 +986,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_formeleNaam"></a><section id="detail_attribute_IMROI_IMROIObject_formeleNaam">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> formele naam</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_formeleNaam"></a><section id="detail_attribute_IMROI_RepressiefObject_formeleNaam">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> formele naam</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -974,6 +996,13 @@
                      <tr>
                         <th>Naam</th>
                         <td>formele naam</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Naam (informeel) Repressief object </p>
+                           </td>
                      </tr>
                      <tr>
                         <th>Toelichting</th>
@@ -999,8 +1028,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_bijzonderheden"></a><section id="detail_attribute_IMROI_IMROIObject_bijzonderheden">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> bijzonderheden</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_bijzonderheden"></a><section id="detail_attribute_IMROI_RepressiefObject_bijzonderheden">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> bijzonderheden</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1034,8 +1063,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_maximaalAantalPersonen"></a><section id="detail_attribute_IMROI_IMROIObject_maximaalAantalPersonen">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> maximaal aantal personen</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_maximaalAantalPersonen"></a><section id="detail_attribute_IMROI_RepressiefObject_maximaalAantalPersonen">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> maximaal aantal personen</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1069,8 +1098,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_maxaantalNietzPersonen"></a><section id="detail_attribute_IMROI_IMROIObject_maxaantalNietzPersonen">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> maxaantal nietz? personen</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_maxaantalNietzPersonen"></a><section id="detail_attribute_IMROI_RepressiefObject_maxaantalNietzPersonen">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> maxaantal nietz? personen</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1105,7 +1134,7 @@
                </table>
                </section>
             <a class="anchor" id="graph_EAID_2B901F60_B1A8_4b7a_9B97_35B930372B88"></a><a class="anchor" id="detail_class_IMROI_Registratie"></a><section id="detail_class_IMROI_Registratie">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> Registratie</h6>
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> Registratie</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1192,8 +1221,8 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_bron"></a><section id="detail_attribute_IMROI_IMROIObject_bron">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> bron</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_bron"></a><section id="detail_attribute_IMROI_RepressiefObject_bron">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> bron</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1227,8 +1256,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMROI_IMROIObject_brontabel"></a><section id="detail_attribute_IMROI_IMROIObject_brontabel">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> brontabel</h6>
+            <a class="anchor" id="detail_attribute_IMROI_RepressiefObject_brontabel"></a><section id="detail_attribute_IMROI_RepressiefObject_brontabel">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> brontabel</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1263,7 +1292,7 @@
                </table>
                </section>
             <a class="anchor" id="graph_EAID_3435660D_25A0_40f7_B95D_6FCBCA243AF7"></a><a class="anchor" id="detail_class_IMROI_Geldigheid"></a><section id="detail_class_IMROI_Geldigheid">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> Geldigheid</h6>
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> Geldigheid</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1350,8 +1379,8 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_association_IMROI_IMROIObject_gerelateerdeFotografie"></a><section id="detail_association_IMROI_IMROIObject_gerelateerdeFotografie">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> heeft</h6>
+            <a class="anchor" id="detail_association_IMROI_RepressiefObject_gerelateerdeFotografie"></a><section id="detail_association_IMROI_RepressiefObject_gerelateerdeFotografie">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> heeft</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1383,8 +1412,8 @@
                </table>
                
                </section>
-            <a class="anchor" id="detail_association_IMROI_IMROIObject_gerelateerdeBodemgesteldheidtype"></a><section id="detail_association_IMROI_IMROIObject_gerelateerdeBodemgesteldheidtype">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> heeft</h6>
+            <a class="anchor" id="detail_association_IMROI_RepressiefObject_gerelateerdeBodemgesteldheidtype"></a><section id="detail_association_IMROI_RepressiefObject_gerelateerdeBodemgesteldheidtype">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> heeft</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1416,8 +1445,8 @@
                </table>
                
                </section>
-            <a class="anchor" id="detail_association_IMROI_IMROIObject_gerelateerdBRobject"></a><section id="detail_association_IMROI_IMROIObject_gerelateerdBRobject">
-               <h6>  <a href="#global_class_IMROI_IMROIObject">IMROI-object</a> hoort bij</h6>
+            <a class="anchor" id="detail_association_IMROI_RepressiefObject_gerelateerdBRobject"></a><section id="detail_association_IMROI_RepressiefObject_gerelateerdBRobject">
+               <h6>  <a href="#global_class_IMROI_RepressiefObject">Repressief Object</a> hoort bij</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -1785,7 +1814,7 @@
                      <tr>
                         <th>Gerelateerd objecttype</th>
                         <td>
-                           <a class="link" href="#global_class_IMROI_IMROIObject">IMROI-object</a>
+                           <a class="link" href="#global_class_IMROI_RepressiefObject">Repressief Object</a>
                            </td>
                      </tr>
                   </tbody>
@@ -2232,7 +2261,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMROI-conceptueel-1.0-0-20210617-20210617-135308 imvertor 1.64.2--><a class="anchor" id="graph_EAID_0F0BB407_E074_475f_9521_0094AEECB4AC"></a><a class="anchor" id="detail_class_IMROI_TypeContactpersoon"></a><section id="detail_class_IMROI_TypeContactpersoon">
+   <!--MIMCM-IMROI-conceptueel-1.0-0-20210617-20210617-140714 imvertor 1.64.2--><a class="anchor" id="graph_EAID_0F0BB407_E074_475f_9521_0094AEECB4AC"></a><a class="anchor" id="detail_class_IMROI_TypeContactpersoon"></a><section id="detail_class_IMROI_TypeContactpersoon">
       <h3>Enumeratie details  TypeContactpersoon</h3>
       
       <table style="width: 100%;" class="list">
