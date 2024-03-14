@@ -9,7 +9,7 @@ Opzet van het systeem 
  
 
 Uitgangspunt voor IMROI is dat gegevens die al in basisregistraties voorkomen
-deze niet opnieuw worden ingewonnen, maar worden overgenomen uit deze bestaande
+niet opnieuw worden ingewonnen, maar worden overgenomen uit deze bestaande
 registraties. Hierbij kan gedacht worden aan gegevens uit de Basisregistratie
 Adressen en Gebouwen (BAG) als het gaat om gegevens van een pand of gegevens uit
 de Basisregistratie Grootschalige Topografie (BGT) als het gaat om gegevens over
@@ -23,13 +23,13 @@ water of natuur zijn. De eerste versie van IMROI concentreert zich op gegeven
 over een pand, zoals dit ook gold voor IMDBK. De verdere beschrijving van het
 model en de catalogus gaat dan ook over IMROI-pand. In een later stadium zullen
 een IMROI-evenement, IMROI-waterongevallen en IMROI-natuurbranden ontwikkeld
-worden. Waarbij voor deze laatste drie geldt dat deze wel de systematiek van
+worden. Hierbij geldt dat deze wel de systematiek van
 IMROI-pand zullen volgen. 
 
  
 
-Mocht in de toekomst blijken dat er nog een andere variant van IMROI nodig is
-dan kan dan kan deze in de huidige systematiek worden opgenomen. 
+Mocht in de toekomst blijken dat er nog een andere objectsoort in IMROI nodig is
+dan kan deze in de huidige systematiek worden opgenomen. 
 
  
 
@@ -39,12 +39,12 @@ Repressief object 
  
 
 Het *repressief object *is het centrale object binnen het informatiemodel
-repressieve object informatie. Alle andere objecten in IMROI hebben een relatie
+Repressieve Objectinformatie. Alle andere objecten in IMROI hebben een relatie
 met een repressief object. 
 
  
 
-Kenmerkend aan een *repressief object* is dat een eenheid van informatie die
+Het *repressief object* is een eenheid van informatie die
 onder de verantwoordelijkheid van één veiligheidsregio valt, voor wat betreft de
 inwinning van informatie. De informatie over dit object dient wel gedeeld te
 worden met andere veiligheidsregio’s in verband met inzet van eenheden in een
@@ -52,7 +52,7 @@ andere regio.  
 
  
 
-*Een repressief* is altijd af te bakenen in de ruimte, wat wil zeggen dat een
+Een *repressief object* is altijd af te bakenen in de ruimte, wat wil zeggen dat een
 repressief object per definitie een plaats op het aardoppervlak heeft. 
 
  
@@ -65,16 +65,16 @@ De definitie van een *repressief object *is: 
 
  
 
-Formele en materiele historie 
+Formele en materiële historie 
 ------------------------------
 
  
 
-Een object kent twee soorten historie, te weten formele en materiele historie.
-Materiele historie betreft de historie van het object in de werkelijkheid. Met
+Een object kent twee soorten historie, te weten formele en materiële historie.
+MateriËle historie betreft de historie van het object in de werkelijkheid. Met
 andere woorden wanneer is het object in de werkelijkheid tot stand gekomen en
 wanneer eindigt deze. Formele historie is de historie van het object in de
-registratie, betreft dus datum en tijd van opname van het object in de
+registratie. Dit betreft datum en tijd van opname van het object in de
 registratie, datum en tijd dat er iets aan de registratie gemuteerd is en datum
 en tijd waarop het object in de registratie is beëindigd. 
 

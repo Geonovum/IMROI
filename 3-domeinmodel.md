@@ -3,23 +3,20 @@ Domeinmodel 
 
  
 
-IMROI betreft een sectormodel, vallend onder de nationale standaard NEN3610 en
+IMROI betreft een sectormodel, vallend onder de nationale standaard NEN 3610 en
 Europese standaard INSPIRE.  
 
-![](media/f492231b8751a878600053f78f86df57.png)
+ <img src="media/f492231b8751a878600053f78f86df57.png" alt="NEN 3610 piramide" style="width: 650px;height: auto">
 
  
 
  
 
- 
-
-Achtergrond NEN3610ID 
-
-De object-identificatie is voor externe referentie, identificatie van objecten
+## Identificatie van objecten
+De in NEN 3610 gedefinieerde object-identificatie is voor externe referentie en identificatie van objecten
 (van buiten naar een object binnen een registratie) in tegenstelling tot de
 interne object-identificatie (binnen een registratie). Uitgangspunt is dat
-objecten uniek identificeerbaar zijn. Om dit te bereiken is de
+objecten over registraties heen uniek identificeerbaar zijn. Om dit te bereiken is de
 object-identificatie opgebouwd uit een landencode (conform ISO 3166-1
 Landencodes, uniek op mondiaal niveau), een namespace waarmee de
 bronhouder/registratie wordt aangeduid (uniek binnen Nederland) en een interne
@@ -35,9 +32,7 @@ NEN 3610 hanteert de volgende regels voor een identifier: 
     binnen het domein van NEN 3610. 
 
 -   De object-identificatie is voor identificatie van een object (een
-    representatie in een database van een 
-
--   fenomeen in de werkelijkheid). De object-identificatie is niet voor
+    representatie in een database van een fenomeen in de werkelijkheid). De object-identificatie is niet voor
     identificatie van het fenomeen zelf. 
 
 -   Object-identificatie is voor externe referentie van het object. 
@@ -48,7 +43,7 @@ NEN 3610 hanteert de volgende regels voor een identifier: 
     object-identificatie voorkomen die anders luidt en die bedoeld is voor
     unieke identificatie. 
 
--   Tijdens de hele levensloop (in een database) van een object blijft de
+-   Tijdens de hele levensloop van een object blijft de
     object-identificatie gelijk. 
 
 -   Objecten kunnen in hun levensloop van eigenschappen veranderen maar de
