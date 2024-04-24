@@ -1,1235 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-125016 imvertor 3.0.0-->
-   <section id="global_package_NEN3610">
-      <h3>View   NEN3610</h3>
-      <section>
-         <h4>Objecttypen   </h4>
-         
-         <section id="global_class_NEN3610_IdentificeerbaarObject">
-            <h5>   Identificeerbaar­Object</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Identificeerbaar­Object</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        nen 3610
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>
-                        nen 3610
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Datum opname</th>
-                     <td>
-                        20221216
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Unieke aanduiding</th>
-                     <td>domein + identificatie</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties
-                        identificeerbaar moeten zijn.
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Ja</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_IdentificeerbaarObject_domein">domein</a>
-                        </td>
-                     <td>
-                        
-                        <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_IdentificeerbaarObject_identificatie">identificatie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
-                           Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
-                           een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
-                           of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
-                           attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
-                           verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
-                           De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Identificeerbaar­Object
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
-                        
-                        
-                        <a class="link" href="#global_class_NEN3610_Registratie">Registratie</a>
-                        
-                        [ 0 .. 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Gegevens over de registratie van het object als informatieobject.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_NEN3610_Registratie">
-            <h5>   Registratie</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Registratie</td>
-                  </tr>
-                  <tr>
-                     <th>Begrip</th>
-                     <td>
-                        
-                        <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie</a>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        nen 3610
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Vastlegging van een versie van een set gegevens.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>
-                        nen 3610
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Datum opname</th>
-                     <td>
-                        20220601
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        Bij het registreren van een object als informatieobject horen een aantal metadata
-                        die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens.
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_beginGeldigheid">begin­Geldigheid</a>
-                        </td>
-                     <td>
-                        
-                        <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
-                        </td>
-                     <td>
-                        DATE
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_eindGeldigheid">eind­Geldigheid</a>
-                        </td>
-                     <td>
-                        
-                        <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
-                           is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
-                           nog geldig.</p>
-                        </td>
-                     <td>
-                        DATE
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_eindRegistratie">eind­Registratie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
-                           De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
-                           is de versie nog actueel.</p>
-                        </td>
-                     <td>
-                        DATETIME
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_objectBeginTijd">object­Begin­Tijd</a>
-                        </td>
-                     <td>
-                        
-                        <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
-                        </td>
-                     <td>
-                        DATETIME
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_objectEindTijd">object­Eind­Tijd</a>
-                        </td>
-                     <td>
-                        
-                        <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
-                        </td>
-                     <td>
-                        DATETIME
-                        </td>
-                     <td>0 .. *</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_tijdstipRegistratie">tijdstip­Registratie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
-                           in de registratie.</p>
-                        </td>
-                     <td>
-                        DATETIME
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_NEN3610_Registratie_versie">versie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Versieaanduiding van een informatieobject.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
-                        
-                        Registratie
-                        [ 0 .. 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Gegevens over de registratie van het object als informatieobject.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section>
-         <h4>Attribuut- en relatiesoort details  </h4>
-         
-         <section>
-            <h5>Objecttype details  </h5>
-            
-            <section id="detail_class_NEN3610_IdentificeerbaarObject">
-               <h6>   Identificeerbaar­Object</h6>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_IdentificeerbaarObject_domein">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> domein</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>domein</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen:
-                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formeel patroon</th>
-                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke
-                              entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie
-                              met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op
-                              het niveau van verschillende registraties en ook mondiaal uniek.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Ja</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_IdentificeerbaarObject_identificatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> identificatie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>identificatie</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
-                                 Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
-                                 een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
-                                 of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
-                                 attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
-                                 verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
-                                 De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen:
-                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formeel patroon</th>
-                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              
-                              <p>‘identificatie’ is de identificatiecode die een object heeft binnen een registratie
-                                 of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling
-                                 is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt
-                                 een object hiermee uniek identificeerbaar op het niveau van verschillende registraties,
-                                 uitwisselprocessen en ook wereldwijd uniek.</p>
-                              
-                              <p>De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Ja</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">
-                  <h7>Relatiesoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> geregistreerd­Met</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geregistreerd­Met</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Gegevens over de registratie van het object als informatieobject.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_NEN3610_Registratie">Registratie</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren
-                              van één versie van het informatieobject. Ze horen als metadata bij de gegevensset
-                              van het informatieobject.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_NEN3610_Registratie">
-               <h6>   Registratie</h6>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_beginGeldigheid">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> begin­Geldigheid</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>begin­Geldigheid</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATE</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time. De start van een periode is het begin van de tijdsaanduiding; het
-                              ‘vanaf-moment’. Bij een datum (date) is dat het begin van die dag.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_eindGeldigheid">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> eind­Geldigheid</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>eind­Geldigheid</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
-                                 is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
-                                 nog geldig.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATE</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn
-                              verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time. Het eind van de periode is tot het begin van de tijdsaanduiding;
-                              het ‘tot-moment’.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_eindRegistratie">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> eind­Registratie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>eind­Registratie</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
-                                 De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
-                                 is de versie nog actueel.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATETIME</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              
-                              <p>Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel
-                                 in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie
-                                 is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het
-                                 de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van
-                                 een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan
-                                 o.a. worden gekozen uit typen TM_Instant, Date of Date­Time. Voor tijdstip­Registratie
-                                 zal Date­Time in vrijwel alle gevallen de beste keuze zijn. </p>
-                              
-                              <p></p>
-                              
-                              <p>Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen
-                                 aan de eind­Geldigheid van een versie, wordt bij het vullen van de eind­Geldigheid
-                                 tegelijkertijd ook altijd de eind­Registratie gevuld zodat het duidelijk is vanaf
-                                 welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eind­Registratie
-                                 geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_objectBeginTijd">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> object­Begin­Tijd</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>object­Begin­Tijd</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATETIME</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_objectEindTijd">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> object­Eind­Tijd</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>object­Eind­Tijd</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATETIME</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_tijdstipRegistratie">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> tijdstip­Registratie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>tijdstip­Registratie</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
-                                 in de registratie.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>DATETIME</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time. Voor tijdstip registratie zal Date­Time in vrijwel alle gevallen
-                              de beste keuze zijn.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_versie">
-                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> versie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>versie</td>
-                        </tr>
-                        <tr>
-                           <th>Begrip</th>
-                           <td>
-                              
-                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie</a>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Versieaanduiding van een informatieobject.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              nen 3610
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              20220601
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>1..50</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              Waarde van attribuut versie mag maximaal 50 karakters bevatten.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een versie van een informatieobject is een toestand van een informatieobject met zijn
-                              gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit
-                              van de identificatie van het object, maar kan worden gebruikt om verschillende instanties
-                              van hetzelfde informatieobject te identificeren.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         
-         
-         
-         
-         </section>
-   </section>
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-150043 imvertor Nightly-build.14-->
    <section id="global_package_IMROIDomein">
       <h3>Domein   IMROI - domein</h3>
       <section>
@@ -1364,7 +136,7 @@
                            een gebouw, een brug, een waterweg, een installatie, enzovoort.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeRepressiefObject">Type­Repressief­Object</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeRepressiefObject">Type­Repressief­Object</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -1452,6 +224,16 @@
                         Repressief­Object
                         is specialisatie van
                         
+                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Repressief­Object
+                        is specialisatie van
+                        
                         <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
                         
                         </td>
@@ -1459,16 +241,6 @@
                         
                         <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
                         </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Repressief­Object
-                        is specialisatie van
-                        
-                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte">Virtuele­Ruimte</a>
-                        
-                        </td>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -1584,6 +356,16 @@
                         Terrein
                         is specialisatie van
                         
+                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begroeiing">Begroeiing</a>
+                        
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Terrein
+                        is specialisatie van
+                        
                         <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
                         
                         </td>
@@ -1591,16 +373,6 @@
                         
                         <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
                         </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Terrein
-                        is specialisatie van
-                        
-                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begroeiing">Begroeiing</a>
-                        
-                        </td>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -2332,7 +1104,7 @@
                         <p>Beschrijving van groepstype.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
+                        <a class="link" href="#detail_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2450,7 +1222,7 @@
                         <p>Naamgeving of omschrijving van de ruimte.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2460,7 +1232,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2473,7 +1245,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2604,7 +1376,7 @@
                         <p>Geeft aan voor welk voertuig de opstelplaats bedoeld is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeOpstelplaats">Type­Opstelplaats</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeOpstelplaats">Type­Opstelplaats</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2710,7 +1482,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeToegang">Type­Toegang</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeToegang">Type­Toegang</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2841,7 +1613,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeVindplaatsSleutel">Type­Vindplaats­Sleutel</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeVindplaatsSleutel">Type­Vindplaats­Sleutel</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2949,7 +1721,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3039,16 +1811,6 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Opslagvoorziening_gevaarlijkeStof">gevaarlijke­Stof</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a>
-                        </td>
-                     <td>0 .. *</td>
-                  </tr>
-                  <tr>
-                     <td>
                         <a class="link" href="#detail_attribute_IMROIDomein_Opslagvoorziening_locatienaam">locatienaam</a>
                         </td>
                      <td>
@@ -3057,6 +1819,99 @@
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        gevaarlijke­Stof
+                        :</td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a>
+                        </td>
+                     <td>0 .. *</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_gEVINummer">GEVI-nummer</a>
+                        </td>
+                     <td>
+                        
+                        <p>Het GEVI-nummer is een uniek identificatienummer dat aan elke gevaarlijke stof of
+                           mengsel is toegewezen. Het bestaat uit een viercijferig nummer, gevolgd door het woord
+                           "UN". Het nummer geeft informatie over het specifieke gevaar en de classificatie van
+                           de stof volgens de VN-standaarden.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_handelingsaanwijzing">handelingsaanwijzing</a>
+                        </td>
+                     <td>
+                        
+                        <p>Link naar de handelingsaanwijzing hoe om te gaan met de gevaarlijke stof</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_hoeveelheid">hoeveelheid</a>
+                        </td>
+                     <td>
+                        
+                        <p>Hoeveelheid van een gevaarlijke stof.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_omschrijving">omschrijving</a>
+                        </td>
+                     <td>
+                        
+                        <p>Indien er geen Un nummer beschikbaar is voor de stof moet er een beschrijving worden
+                           ingevuld.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_toestand">toestand</a>
+                        </td>
+                     <td>
+                        
+                        <p>Aggregatietoestand van een gevaarlijke stof.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_IMROIDomein_TypeToestand">Type­Toestand</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_IMROIDomein_GevaarlijkeStof_uNNummer">UN-nummer</a>
+                        </td>
+                     <td>
+                        
+                        <p>Het UN nummer is een stofidentificatienummer dat een gevaarlijke stof identificeert
+                           tijdens het transport, conform voorschriften van de Verenigde Naties</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_IMROIDomein_TypeUNNummer">Type­UNNummer</a>
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -3164,7 +2019,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3273,7 +2128,7 @@
                         <p>Geeft aan type voorziening het is.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3425,7 +2280,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeVoorziening">Type­Voorziening</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeVoorziening">Type­Voorziening</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3521,7 +2376,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeBouwkundigeVoorziening">Type­Bouwkundige­Voorziening</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeBouwkundigeVoorziening">Type­Bouwkundige­Voorziening</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3621,7 +2476,7 @@
                         <p>Geeft aan type voorziening het is.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeOrganisatorischeVoorziening">Type­Organisatorische­Voorziening</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeOrganisatorischeVoorziening">Type­Organisatorische­Voorziening</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3748,7 +2603,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3870,7 +2725,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeSector">Type­Sector</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeSector">Type­Sector</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -3975,7 +2830,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypePOI">Type­POI</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypePOI">Type­POI</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -4083,7 +2938,7 @@
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDreiging">Type­Dreiging</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -4191,7 +3046,7 @@
                         <p>Geeft aan type voorziening het is.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_IMROIDomein_TypeGebiedsgerichteAanpak">Type­Gebiedsgerichte­Aanpak</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeGebiedsgerichteAanpak">Type­Gebiedsgerichte­Aanpak</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -6958,321 +5813,6 @@
                   </table>
                   </div>
                
-               <div class="notoc" id="detail_attribute_IMROIDomein_Opslagvoorziening_gevaarlijkeStof">
-                  <h7>Gegevensgroep  <a href="#global_class_IMROIDomein_Opslagvoorziening">Opslagvoorziening</a> gevaarlijke­Stof</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr></tr>
-                        <tr>
-                           <th>Naam</th>
-                           <td>gevaarlijke­Stof</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_class_IMROIDomein_GevaarlijkeStof">
-                  <h7>Gegevensgroeptype   Gevaarlijke­Stof</h7>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_gEVINummer">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> GEVI-nummer</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>GEVI-nummer</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Het GEVI-nummer is een uniek identificatienummer dat aan elke gevaarlijke stof of
-                                    mengsel is toegewezen. Het bestaat uit een viercijferig nummer, gevolgd door het woord
-                                    "UN". Het nummer geeft informatie over het specifieke gevaar en de classificatie van
-                                    de stof volgens de VN-standaarden.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_handelingsaanwijzing">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> handelingsaanwijzing</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>handelingsaanwijzing</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Link naar de handelingsaanwijzing hoe om te gaan met de gevaarlijke stof</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_hoeveelheid">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> hoeveelheid</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>hoeveelheid</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Hoeveelheid van een gevaarlijke stof.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_omschrijving">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> omschrijving</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>omschrijving</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Indien er geen Un nummer beschikbaar is voor de stof moet er een beschrijving worden
-                                    ingevuld.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_toestand">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> toestand</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>toestand</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Aggregatietoestand van een gevaarlijke stof.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="link" href="#detail_class_IMROIDomein_TypeToestand">Type­Toestand</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_IMROIDomein_GevaarlijkeStof_uNNummer">
-                     <h8>Attribuutsoort details  <a href="#global_class_IMROIDomein_GevaarlijkeStof">Gevaarlijke­Stof</a> UN-nummer</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>UN-nummer</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>Het UN nummer is een stofidentificatienummer dat een gevaarlijke stof identificeert
-                                    tijdens het transport, conform voorschriften van de Verenigde Naties</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="link" href="#detail_class_IMROIDomein_TypeUNNummer">Type­UNNummer</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  </div>
-               
                <div class="deepheader" id="detail_attribute_IMROIDomein_Opslagvoorziening_locatienaam">
                   <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Opslagvoorziening">Opslagvoorziening</a> locatienaam</h7>
                   
@@ -9361,6 +7901,1234 @@
          
          </section>
    </section>
+   <section id="global_package_NEN3610">
+      <h3>View   NEN3610</h3>
+      <section>
+         <h4>Objecttypen   </h4>
+         
+         <section id="global_class_NEN3610_IdentificeerbaarObject">
+            <h5>   Identificeerbaar­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Identificeerbaar­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>
+                        nen 3610
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>
+                        nen 3610
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td>
+                        20221216
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Unieke aanduiding</th>
+                     <td>domein + identificatie</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties
+                        identificeerbaar moeten zijn.
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Ja</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_IdentificeerbaarObject_domein">domein</a>
+                        </td>
+                     <td>
+                        
+                        <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_IdentificeerbaarObject_identificatie">identificatie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
+                           Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
+                           een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
+                           of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
+                           attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
+                           verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+                           De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Identificeerbaar­Object
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
+                        
+                        
+                        <a class="link" href="#global_class_NEN3610_Registratie">Registratie</a>
+                        
+                        [ 0 .. 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gegevens over de registratie van het object als informatieobject.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_NEN3610_Registratie">
+            <h5>   Registratie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Registratie</td>
+                  </tr>
+                  <tr>
+                     <th>Begrip</th>
+                     <td>
+                        
+                        <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie</a>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>
+                        nen 3610
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Vastlegging van een versie van een set gegevens.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>
+                        nen 3610
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td>
+                        20220601
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        Bij het registreren van een object als informatieobject horen een aantal metadata
+                        die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens.
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_beginGeldigheid">begin­Geldigheid</a>
+                        </td>
+                     <td>
+                        
+                        <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
+                        </td>
+                     <td>
+                        DATE
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_eindGeldigheid">eind­Geldigheid</a>
+                        </td>
+                     <td>
+                        
+                        <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
+                           is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
+                           nog geldig.</p>
+                        </td>
+                     <td>
+                        DATE
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_eindRegistratie">eind­Registratie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
+                           De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
+                           is de versie nog actueel.</p>
+                        </td>
+                     <td>
+                        DATETIME
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_objectBeginTijd">object­Begin­Tijd</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
+                        </td>
+                     <td>
+                        DATETIME
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_objectEindTijd">object­Eind­Tijd</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
+                        </td>
+                     <td>
+                        DATETIME
+                        </td>
+                     <td>0 .. *</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_tijdstipRegistratie">tijdstip­Registratie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                           in de registratie.</p>
+                        </td>
+                     <td>
+                        DATETIME
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_NEN3610_Registratie_versie">versie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Versieaanduiding van een informatieobject.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
+                        
+                        Registratie
+                        [ 0 .. 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gegevens over de registratie van het object als informatieobject.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section>
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section>
+            <h5>Objecttype details  </h5>
+            
+            <section id="detail_class_NEN3610_IdentificeerbaarObject">
+               <h6>   Identificeerbaar­Object</h6>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_IdentificeerbaarObject_domein">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> domein</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>domein</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen:
+                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke
+                              entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie
+                              met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op
+                              het niveau van verschillende registraties en ook mondiaal uniek.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Ja</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_IdentificeerbaarObject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
+                                 Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
+                                 een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
+                                 of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
+                                 attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
+                                 verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+                                 De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen:
+                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>‘identificatie’ is de identificatiecode die een object heeft binnen een registratie
+                                 of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling
+                                 is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt
+                                 een object hiermee uniek identificeerbaar op het niveau van verschillende registraties,
+                                 uitwisselprocessen en ook wereldwijd uniek.</p>
+                              
+                              <p>De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Ja</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_NEN3610_IdentificeerbaarObject_registratiegegevens">
+                  <h7>Relatiesoort details  <a href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a> geregistreerd­Met</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geregistreerd­Met</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Gegevens over de registratie van het object als informatieobject.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_NEN3610_Registratie">Registratie</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren
+                              van één versie van het informatieobject. Ze horen als metadata bij de gegevensset
+                              van het informatieobject.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_NEN3610_Registratie">
+               <h6>   Registratie</h6>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_beginGeldigheid">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> begin­Geldigheid</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>begin­Geldigheid</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATE</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. De start van een periode is het begin van de tijdsaanduiding; het
+                              ‘vanaf-moment’. Bij een datum (date) is dat het begin van die dag.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_eindGeldigheid">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> eind­Geldigheid</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eind­Geldigheid</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
+                                 is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
+                                 nog geldig.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATE</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn
+                              verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. Het eind van de periode is tot het begin van de tijdsaanduiding;
+                              het ‘tot-moment’.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_eindRegistratie">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> eind­Registratie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eind­Registratie</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
+                                 De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
+                                 is de versie nog actueel.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATETIME</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel
+                                 in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie
+                                 is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het
+                                 de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van
+                                 een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan
+                                 o.a. worden gekozen uit typen TM_Instant, Date of Date­Time. Voor tijdstip­Registratie
+                                 zal Date­Time in vrijwel alle gevallen de beste keuze zijn. </p>
+                              
+                              <p></p>
+                              
+                              <p>Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen
+                                 aan de eind­Geldigheid van een versie, wordt bij het vullen van de eind­Geldigheid
+                                 tegelijkertijd ook altijd de eind­Registratie gevuld zodat het duidelijk is vanaf
+                                 welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eind­Registratie
+                                 geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_objectBeginTijd">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> object­Begin­Tijd</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Begin­Tijd</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATETIME</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_objectEindTijd">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> object­Eind­Tijd</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Eind­Tijd</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATETIME</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_tijdstipRegistratie">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> tijdstip­Registratie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>tijdstip­Registratie</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                                 in de registratie.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>DATETIME</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. Voor tijdstip registratie zal Date­Time in vrijwel alle gevallen
+                              de beste keuze zijn.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_NEN3610_Registratie_versie">
+                  <h7>Attribuutsoort details  <a href="#global_class_NEN3610_Registratie">Registratie</a> versie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>versie</td>
+                        </tr>
+                        <tr>
+                           <th>Begrip</th>
+                           <td>
+                              
+                              <a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie" target="_blank">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie</a>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Versieaanduiding van een informatieobject.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              nen 3610
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              20220601
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>1..50</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              Waarde van attribuut versie mag maximaal 50 karakters bevatten.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een versie van een informatieobject is een toestand van een informatieobject met zijn
+                              gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit
+                              van de identificatie van het object, maar kan worden gebruikt om verschillende instanties
+                              van hetzelfde informatieobject te identificeren.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         </section>
+   </section>
    <section id="global_package_IMBAG">
       <h3>View   IMBAG</h3>
       <section>
@@ -10436,7 +10204,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-125016 imvertor 3.0.0-->
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-150043 imvertor Nightly-build.14-->
    <section>
       <h3>Codelijst inhoud   </h3>
       <section id="detail_class_IMROIDomein_TypeDraagconstructie">
