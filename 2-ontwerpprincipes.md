@@ -19,13 +19,12 @@ gevaarlijke stoffen en veiligheidsvoorzieningen. Deze informatieobjecten hebben
 vaak hun eigen geometrie.
 
 ![Afbeelding met tekst, schermopname, diagram, Plan Automatisch gegenereerde
-beschrijving](media/a0a266b07bd0b90ab3db2dbc90fe876b.png)
-
-Een kenmerk van een repressief object is dat de verantwoordelijkheid voor het
-verzamelen van informatie over dat object bij één veiligheidsregio ligt. Echter,
-vanwege de mogelijkheid van inzet van eenheden over de regiogrens heen in een
-andere regio, is het noodzakelijk om informatie over objecten te delen met
-andere veiligheidsregio's.
+beschrijving](media/a0a266b07bd0b90ab3db2dbc90fe876b.png)Een kenmerk van een
+repressief object is dat de verantwoordelijkheid voor het verzamelen van
+informatie over dat object bij één veiligheidsregio ligt. Echter, vanwege de
+mogelijkheid van inzet van eenheden over de regiogrens heen in een andere regio,
+is het noodzakelijk om informatie over objecten te delen met andere
+veiligheidsregio's.
 
 Dit betekent dat hoewel de verantwoordelijkheid voor het verzamelen van
 informatie primair bij één veiligheidsregio ligt, er een behoefte kan zijn om
@@ -64,6 +63,12 @@ het model voldoet aan de nationale en internationale normen voor geo-informatie,
 en biedt tevens een solide basis voor toekomstige ontwikkelingen en
 uitbreidingen van het informatiemodel.
 
+Onderstaande afbeelding toont de semantische relaties tussen NEN3610 en
+IMROI-objecten.
+
+![Afbeelding met tekst, diagram, Plan, Technische tekening Automatisch
+gegenereerde beschrijving](media/df94958d8bc12429e7c0d96b42a13b13.png)
+
 ### Metamodel
 
 Het Informatiemodel Repressieve Object Informatie (IMROI) is gemodelleerd op
@@ -84,9 +89,36 @@ gestandaardiseerde en eenduidige informatie over repressieve objecten en hun
 omgeving, wat essentieel is voor een effectieve uitvoering van de
 publiekrechtelijke taken van de veiligheidsregio's.
 
+### ISO 19107 Geographic information
+
+De standaard [Geographic information - Spatial
+Schema](https://www.iso.org/standard/66175.html) definieert het ruimtelijk
+schema: het informatiemodel van geometrieën. In ISO 19107 zijn de
+geometrietypen, hun eigenschappen en hun onderlinge relaties opgenomen. De
+geometrietypen uit deze standaard, zoals GM_Point, GM_Curve, en GM_Surface
+worden gebruikt om de geometrietypen in geo-informatiemodellen te specificeren.
+
+In het IMROI worden de geometrietypen uit ISO19107:2019 toegepast.
+
+De geometrie wordt in het informatiemodel met hun ISO 19107 naam, zoals
+GM_Surface, aangeduid.
+
+| Geometrietype | ISO aanduiding  |
+|---------------|-----------------|
+| Vlak          | GM_Surface      |
+| Lijn          | GM_Curve        |
+| Punt          | GM_Point        |
+| Multivlak     | GM_MultiSurface |
+| Multilijn     | GM_MultiCurve   |
+| Multipunt     | GM_MultiPoint   |
+
 ## Samenhang met andere registraties
 
-### Voor de implementatie van het IMROI worden gegevens uit verschillende registraties uitgebreid of samengevoegd. Om deze reden is het IMROI zodanig gemodelleerd dat het externe koppelingen heeft met objecten in andere informatiemodellen die onder deze registraties vallen. Dit zorgt ervoor dat de objecten in het IMROI een relatie hebben met objecten in andere registraties.
+Voor de implementatie van het IMROI worden gegevens uit verschillende
+registraties uitgebreid of samengevoegd. Om deze reden is het IMROI zodanig
+gemodelleerd dat het externe koppelingen heeft met objecten in andere
+informatiemodellen die onder deze registraties vallen. Dit zorgt ervoor dat de
+objecten in het IMROI een relatie hebben met objecten in andere registraties.
 
 ### Basisregistratie Adressen en Gebouwen (BAG)
 
