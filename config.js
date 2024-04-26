@@ -1,6 +1,6 @@
 var respecConfig = {
   //format: "markdown",
-  specStatus: "GN-WV",
+  specStatus: "GN-CV",
   specType: "IM",
  // subtitle: "Basisregistratie grootschalige topografie",
   //canonicalURI: "WV",
