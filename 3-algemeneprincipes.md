@@ -182,7 +182,7 @@ registratiegegevens van het IMROI-object. De historie van een object in de
 werkelijkheid wordt weergegeven in twee tijdlijnen: de tijdlijn geldigheid en de
 tijdlijn registratie.
 
-### Tijdlijn geldigheid
+#### Tijdlijn geldigheid
 
 De tijdlijn geldigheid vertelt ons hoe lang een IMROI-object geldig is door te
 laten zien wanneer de eigenschappen ervan veranderen in de echte wereld. Bij
@@ -190,7 +190,7 @@ elke nieuwe versie van een IMROI-object worden registratiegegevens toegevoegd.
 Deze gegevens bevatten twee attributen: 'beginGeldigheid' en 'eindGeldigheid',
 die aangeven voor welke periode deze versie van het IMROI-object geldig is.
 
-### Tijdlijn registratie
+#### Tijdlijn registratie
 
 De tijdlijn registratie laat zien wanneer de gegevens van een IMROI-object
 veranderen in de registratie. Met andere woorden, het vertelt ons wanneer iets
@@ -200,14 +200,14 @@ registratiegegevens toegevoegd. Deze gegevens bevatten twee attributen:
 registratieperiode deze versie van het IMROI-object geldig is. Over het algemeen
 loopt de tijdlijn registratie achter op de tijdlijn geldigheid.
 
-### Levensduur
+#### Levensduur
 
 De levensduur van een object in de echte wereld begint wanneer het voor het
 eerst verschijnt en eindigt wanneer het verdwijnt. De registratie van de
 levensduur vertelt ons voor welke periode het IMROI-object de echte wereld
 vertegenwoordigt.
 
-## Relaties naar Informatieobjecten
+## RepressiefObject en informatieobjecten
 
 Een RepressiefObject is van het type Gebouw, Natuur, Water, Evenement of Infra.
 In het IMROI worden vanuit het RepressiefObject relaties gelegd met
