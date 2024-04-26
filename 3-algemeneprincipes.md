@@ -1,6 +1,51 @@
 # Algemene principes
 
-## IMROI-Objecten
+## Bronhouders
+
+Binnen het kader van het Informatiemodel Repressieve Objectinformatie (IMROI)
+fungeren veiligheidsregio's als bronhouders voor de gegevens binnen hun eigen
+gebied. Een bronhouder is de organisatie of entiteit die verantwoordelijk is
+voor het beheren en leveren van specifieke gegevens.
+
+Het repressieve object vormt het kernobject binnen het IMROI. Alle andere
+objecten in het IMROI hebben een relatie met een repressief object. Een
+belangrijk kenmerk van een repressief object is dat de verantwoordelijkheid voor
+het verzamelen van informatie over dat object bij één veiligheidsregio ligt.
+
+Vanwege de mogelijkheid van inzet van eenheden over de regiogrens heen, is het
+echter noodzakelijk om informatie over objecten te delen met andere
+veiligheidsregio's. Hoewel de verantwoordelijkheid voor het verzamelen van
+informatie primair bij één veiligheidsregio ligt, kan er een behoefte zijn om
+relevante informatie over het repressieve object te delen met andere
+veiligheidsregio's. Op die manier kunnen de betrokken veiligheidsregio's
+efficiënt samenwerken en gecoördineerde acties ondernemen bij incidenten of
+calamiteiten die zich voordoen op of rondom het repressieve object, zelfs als
+deze zich buiten het territoriale gebied van één veiligheidsregio bevinden.
+
+Het delen van informatie tussen veiligheidsregio's kan cruciaal zijn voor een
+effectieve en gecoördineerde respons, met name in situaties waarbij
+grensoverschrijdende samenwerking nodig is. Het zorgt ervoor dat alle relevante
+actoren op de hoogte zijn van de situatie en de benodigde informatie hebben om
+passende maatregelen te nemen.
+
+## Landelijke voorziening
+
+De landelijke voorziening, beheerd door het Nationaal Instituut Publieke
+Veiligheid (NIPV), is verantwoordelijk voor de opslag en verdere distributie van
+de IMROI-objecten naar de andere veiligheidsregio's. Dit zorgt ervoor dat de
+gegevens op een gestandaardiseerde en consistente manier worden uitgewisseld
+tussen de verschillende veiligheidsregio's.
+
+De landelijke voorziening speelt een cruciale rol in het beschikbaar maken van
+informatie over de objecten binnen de veiligheidsketen, waardoor deze informatie
+landelijk toegankelijk is en kan worden gebruikt voor verschillende
+toepassingen.
+
+De Veiligheidsregio conformeert zich aan de IMROI-standaard als het om data
+deling met het NIPV gaat. In samenwerking met de eigen softwareleverancier zorgt
+de Veiligheidsregio ervoor dat de gegevens volgens de vastgestelde
+uitwisselstandaard beschikbaar worden gesteld aan de landelijke voorziening van
+het NIPV.
 
 ## Coordinaat-referentiesysteem
 
@@ -20,14 +65,47 @@ het Nederlandse deel van de Noordzee behoort, geldt dat coördinaten herleidbaar
 moeten zijn tot het European Terrestrial Reference System 1989 (ETRS89) voor de
 horizontale component.
 
-## Identificatie en registratiegegevens
+## Geometrietypen
 
-![Afbeelding met tekst, schermopname, Lettertype, nummer Automatisch
-gegenereerde beschrijving](media/a4cc27adfaa9f114b3bae19f39c8925a.png)
+Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
+
+| Objecttype                             | Geometrietype |
+|----------------------------------------|---------------|
+| Repressief­Object                      | Punt          |
+| Terrein                                | Multivlak     |
+| Gebouw                                 | Vlak          |
+| Dakconstructie                         | *Geen*        |
+| Bouwlaag                               | Multivlak     |
+| Ruimte                                 | Multivlak     |
+| *InformatieObject*                     | *Geen*        |
+| Aanwezigen                             | *Geen*        |
+| BHVOrganisatie                         | *Geen*        |
+| Contactpersoon                         | *Geen*        |
+| Sectoren                               | Multivlak     |
+| Opstelplaats                           | Punt          |
+| Bereikbaarheid                         | Multilijn     |
+| ToegangTerrein                         | Multipunt     |
+| VindplaatsSleutel                      | Punt          |
+| Dreiging                               | Punt          |
+| Opslagvoorziening                      | Punt          |
+| Schadecirkel                           | Punt          |
+| Point of interest                      | Multipunt     |
+| *Veiligheidsvoorziening*               | *Geen*        |
+| TechnischeVeiligheidsvoorziening       | Punt          |
+| BouwkundigeVeiligheidsvoorziening      | Lijn          |
+| OrganisatorischeVeiligheidsvoorziening | *Geen*        |
+| Beheersmaatregel                       | Punt          |
+| Gebiedsgerichte­Aanpak                 | Punt          |
+| Risicocontouren                        | Multilijn     |
+
+## Identificatie en registratiegegevens
 
 Voor elk object in het IMROI wordt een unieke aanduiding (identificatie) en de
 registratiegegevens vastgelegd. Het IMROI volgt de principes en modelering van
 het NEN 3610:2022.
+
+![Afbeelding met tekst, schermopname, Lettertype, nummer Automatisch
+gegenereerde beschrijving](media/a4cc27adfaa9f114b3bae19f39c8925a.png)
 
 Elk IMROI-object is een specialisatie van het abstract objecttype NEN3610-object
 IdentificeerbaarObject. Hiermee overerft elk IMROI-object vanuit NEN3610 de
@@ -53,9 +131,10 @@ opeenvolging van hexadecimale noteringen (0-9 en a-f).
 
 Op deze wijze ziet een IMROI er dan als volgt uit.
 
-Domein NL.IMROI
-
-Identificatie 7451f26f-c1e7-4e5e-8ddf-73fa0e190512
+| Attribuut      | Attribuutwaarde                      |
+|----------------|--------------------------------------|
+| Domein         | NL.IMROI                             |
+| Identificatie  | 7451f26f-c1e7-4e5e-8ddf-73fa0e190512 |
 
 De identificatie van een IMROI-object wordt bepaald bij het ontstaan van het
 object en blijft behouden gedurende de hele levensloop van het object.
@@ -98,39 +177,83 @@ Wijzigen van de eindregistratie leidt niet tot een nieuwe versie van een object.
 
 ### Levensduur en historie
 
-De lever
+De levensduur en historie van een object worden bijgehouden in de
+registratiegegevens van het IMROI-object. De historie van een object in de
+werkelijkheid wordt weergegeven in twee tijdlijnen: de tijdlijn geldigheid en de
+tijdlijn registratie.
 
-De historie van het object wordt vastgelegd in de Registratiegegevens.
+### Tijdlijn geldigheid
 
-Tijdlijn geldigheid
+De tijdlijn geldigheid vertelt ons hoe lang een IMROI-object geldig is door te
+laten zien wanneer de eigenschappen ervan veranderen in de echte wereld. Bij
+elke nieuwe versie van een IMROI-object worden registratiegegevens toegevoegd.
+Deze gegevens bevatten twee attributen: 'beginGeldigheid' en 'eindGeldigheid',
+die aangeven voor welke periode deze versie van het IMROI-object geldig is.
 
-De tijdlijn geldigheid beschrijft de geldigheidsperiode van een IMROI-object
-door het benoemen van de tijdstippen van veranderingen van eigenschappen, de
-toestand, van een object in de werkelijkheid. Implementatie van de tijdlijn
-geldigheid gebruikt door bij ieder versie een IMROI-object registratiegegevens
-opte nemen met twee attributen, beginGeldigheid en eindGeldigheid, die aangeven
-op welke periode deze versie van het IMROI-object betrekking hebben.
+### Tijdlijn registratie
 
-Tijdlijn registratie
+De tijdlijn registratie laat zien wanneer de gegevens van een IMROI-object
+veranderen in de registratie. Met andere woorden, het vertelt ons wanneer iets
+wordt geregistreerd. Bij elke nieuwe versie van een IMROI-object worden
+registratiegegevens toegevoegd. Deze gegevens bevatten twee attributen:
+'tijdstipRegistratie' en 'eindRegistratie', die aangeven voor welke
+registratieperiode deze versie van het IMROI-object geldig is. Over het algemeen
+loopt de tijdlijn registratie achter op de tijdlijn geldigheid.
 
-De tijdlijn registratie beschrijft de tijdstippen van verandereingen van
-gegevens van een IMROI-object in de registratie. Dus de tijdstippen dat iets
-wordt geregistreerd. Dit houd in dat tijdstippen van aanpassing van attributen
-of attribuutwaarden in een registratie worden vastgelegd.
+### Levensduur
 
-Implementatie van tijdlijn regitratie gebeurt door in iedere versie van een
-IMRO-object registratiegegevens op te nemen met twee attributen,
-tijdstipregistratie en eindRegistratie die aangeven op welk registratieperiode
-deze versie van het IMROI-object betrekking heeft. Doorgaans loop de tijdlijn
-registratie achter op de tijdlijn geldigheid.
+De levensduur van een object in de echte wereld begint wanneer het voor het
+eerst verschijnt en eindigt wanneer het verdwijnt. De registratie van de
+levensduur vertelt ons voor welke periode het IMROI-object de echte wereld
+vertegenwoordigt.
 
-Levensduur
+## Relaties naar Informatieobjecten
 
-De levensduur van een object in de werkelijkheid is een afgeleid ggegeven en
-begint bij het eerste voorkomen van dat object, en eindigt wanneer het object
-verdwijnt. De registratie avn elvernsduur is daarmee de priodle in de
-werklijkheid waarin het IMROI-opbject de werkelijkheid respresenteerd.
+Een RepressiefObject is van het type Gebouw, Natuur, Water, Evenement of Infra.
+In het IMROI worden vanuit het RepressiefObject relaties gelegd met
+informatieobjecten. Niet elk informatieobject is van toepassing op elk type
+RepressiefObject. Om de dataconsistentie te waarborgen, worden de volgende
+regels toegepast:
 
-Historie
+-   BHVOrganisatie als Informatieobject komt alleen voor bij een Repressief
+    Object van het type Gebouw, Evenement of Infra.
 
-## Uitwisseling
+-   Bouwkundige veiligheidsvoorzieningen als Informatieobject komt voor bij een
+    Repressief Object van het type Gebouw.
+
+-   Points of Interest als informatieobject komt alleen voor bij Repressief
+    Object van het type Natuur.
+
+-   GebiedsgerichteAanpak als informatieobject komt alleen voor bij Repressief
+    Object van het type Natuur.
+
+-   Beheersmaatregel als informatieobject komt alleen voor bij het
+    RepressiefObject van het type Water.
+
+-   Risicocontouren als informatieobject komt alleen voor bij het
+    RepressiefObject van het type Natuur, Water of Infra.
+
+De onderstaande tabel geeft aan welke informatieobjecten mogen worden gekoppeld
+aan welk type RepressiefObject.
+
+| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* |
+|--------------------------------------------|----------|----------|---------|-------------|---------|
+| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       |
+| BHVOrganisatie                             | ×        |          |         | ×           | ×       |
+| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       |
+| Sectoren                                   | ×        | ×        | ×       | ×           | ×       |
+| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       |
+| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       |
+| ToegangTerrein                             | ×        | ×        | ×       | ×           | ×       |
+| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       |
+| Dreiging                                   | ×        | ×        | ×       | ×           | ×       |
+| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       |
+| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       |
+| Points of interest                         |          | ×        |         |             |         |
+| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       |
+| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       |
+| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         |
+| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       |
+| Beheersmaatregel                           |          |          | ×       |             |         |
+| GebiedsgerichteAanpak                      |          | ×        |         |             |         |
+| Risicocontouren                            |          | ×        | ×       |             | ×       |
