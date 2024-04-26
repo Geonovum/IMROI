@@ -42,7 +42,7 @@ passende maatregelen te nemen.
 
 ## Modellering
 
-### NEN3610
+### Basismodel Geo-Informatie (NEN3610)
 
 Het Informatiemodel Repressieve Object Informatie (IMROI) is gemodelleerd op
 basis van het [Basismodel
@@ -67,7 +67,7 @@ Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
 ![Afbeelding met tekst, diagram, Plan, Technische tekening Automatisch
-gegenereerde beschrijving](media/11508c564f8d098b13351c3d336f26bc.png)
+gegenereerde beschrijving](media/49cd19328e3a2088b53b5bb13af7adb5.png)
 
 | IMROI                                  | NEN3610                                |
 |----------------------------------------|----------------------------------------|
@@ -98,7 +98,7 @@ gegenereerde beschrijving](media/11508c564f8d098b13351c3d336f26bc.png)
 | GebiedsgerichteAanpak                  | *VirtueleRuimte*                       |
 | Risicocontouren                        | *VirtueleRuimte*                       |
 
-### Metamodel
+### Metamodel voor Informatiemodelering (MIM)
 
 Het Informatiemodel Repressieve Object Informatie (IMROI) is gemodelleerd op
 basis van het [Metamodel voor Informatiemodelering
@@ -118,7 +118,7 @@ gestandaardiseerde en eenduidige informatie over repressieve objecten en hun
 omgeving, wat essentieel is voor een effectieve uitvoering van de
 publiekrechtelijke taken van de veiligheidsregio's.
 
-### ISO 19107 Geographic information
+### Geo-informatie – ruimtelijk schema (ISO 19107)
 
 De standaard [Geographic information - Spatial
 Schema](https://www.iso.org/standard/66175.html) definieert het ruimtelijk
