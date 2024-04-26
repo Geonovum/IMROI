@@ -174,8 +174,8 @@ De BGT is bedoeld voor gebruik op een schaal van 1:500 tot 1:5.000. Het gaat
 over topografische objecten, zoals gebouwen, wegen, spoorwegen, waterlopen,
 parken en bossen.
 
-Voor meer informatie over het informatiemodel BGT, zie:
-<https://www.geonovum.nl/geo-standaarden/bgt-imgeo>
+Voor meer informatie over het informatiemodel BGT, zie: [website
+Geonovum](https://www.geonovum.nl/geo-standaarden/bgt-imgeo)
 
 Gegevens over wegen, water, terreinen, gebouwen, kunstwerken, en functionele
 gebieden uit de BGT worden binnen IMROI hergebruikt voor repressieve objecten
