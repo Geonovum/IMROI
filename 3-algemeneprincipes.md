@@ -95,7 +95,7 @@ Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
 | BouwkundigeVeiligheidsvoorziening      | Lijn          |
 | OrganisatorischeVeiligheidsvoorziening | *Geen*        |
 | Beheersmaatregel                       | Punt          |
-| Gebiedsgerichte­Aanpak                 | Punt          |
+| GebiedsgerichteAanpak                  | Punt          |
 | Risicocontouren                        | Multilijn     |
 
 ## Identificatie en registratiegegevens
@@ -131,10 +131,10 @@ opeenvolging van hexadecimale noteringen (0-9 en a-f).
 
 Op deze wijze ziet een IMROI er dan als volgt uit.
 
-| Attribuut      | Attribuutwaarde                      |
-|----------------|--------------------------------------|
-| Domein         | NL.IMROI                             |
-| Identificatie  | 7451f26f-c1e7-4e5e-8ddf-73fa0e190512 |
+| Attribuut     | Attribuutwaarde                      |
+|---------------|--------------------------------------|
+| Domein        | NL.IMROI                             |
+| Identificatie | 7451f26f-c1e7-4e5e-8ddf-73fa0e190512 |
 
 De identificatie van een IMROI-object wordt bepaald bij het ontstaan van het
 object en blijft behouden gedurende de hele levensloop van het object.

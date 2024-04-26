@@ -63,11 +63,40 @@ het model voldoet aan de nationale en internationale normen voor geo-informatie,
 en biedt tevens een solide basis voor toekomstige ontwikkelingen en
 uitbreidingen van het informatiemodel.
 
-Onderstaande afbeelding toont de semantische relaties tussen NEN3610 en
+Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
 ![Afbeelding met tekst, diagram, Plan, Technische tekening Automatisch
-gegenereerde beschrijving](media/df94958d8bc12429e7c0d96b42a13b13.png)
+gegenereerde beschrijving](media/11508c564f8d098b13351c3d336f26bc.png)
+
+| IMROI                                  | NEN3610                                |
+|----------------------------------------|----------------------------------------|
+| RepressiefObject                       | VirtueleRuimte                         |
+| Terrein                                | Begroeiing OppervlakteWater Verharding |
+| Gebouw                                 | Gebouw                                 |
+| Dakconstructie                         | Constructie                            |
+| Bouwlaag                               | Constructie                            |
+| Ruimte                                 | Constructie                            |
+| *InformatieObject*                     | *VirtueleRuimte*                       |
+| Aanwezigen                             | *VirtueleRuimte*                       |
+| BHVOrganisatie                         | *VirtueleRuimte*                       |
+| Contactpersoon                         | *VirtueleRuimte*                       |
+| Sectoren                               | *VirtueleRuimte*                       |
+| Opstelplaats                           | *VirtueleRuimte*                       |
+| Bereikbaarheid                         | *VirtueleRuimte*                       |
+| ToegangTerrein                         | Constructie *VirtueleRuimte*           |
+| VindplaatsSleutel                      | *VirtueleRuimte*                       |
+| Dreiging                               | *VirtueleRuimte*                       |
+| Opslagvoorziening                      | Constructie                            |
+| Schadecirkel                           | *VirtueleRuimte*                       |
+| Point of interest                      | *VirtueleRuimte*                       |
+| Veiligheidsvoorziening                 | *VirtueleRuimte*                       |
+| TechnischeVeiligheidsvoorziening       | *VirtueleRuimte*                       |
+| BouwkundigeVeiligheidsvoorziening      | *VirtueleRuimte*                       |
+| OrganisatorischeVeiligheidsvoorziening | *VirtueleRuimte*                       |
+| Beheersmaatregel                       | *VirtueleRuimte*                       |
+| GebiedsgerichteAanpak                  | *VirtueleRuimte*                       |
+| Risicocontouren                        | *VirtueleRuimte*                       |
 
 ### Metamodel
 
