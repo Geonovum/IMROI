@@ -14,6 +14,63 @@ var respecConfig = {
       note: ""    
     }    
   ],
+   authors: [
+    {
+      name: "Alex Ehlting",
+      company: "Brandweer Flevoland",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+     {
+      name: "Bob Hulst",
+      company: "Veiligheidsregio Zaanstreek Waterland",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+    {
+      name: "Joachim Tempelaars",
+      company: "Veiligheidsregio Brabant-Zuidoost",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+	  {
+      name: "Joost Deen",
+      company: "Veiligheidsregio",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+	    {
+      name: "Mark Twisk",
+      company: "Brandweer Flevoland",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+		    {
+      name: "Remco Volger",
+      company: "Brandweer Amsterdam Amstelland",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+		    {
+      name: "Sjoerd Harmsen",
+      company: "NIPV",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "#",
+      note: ""    
+    },
+	
+	
+	
+	
+	
+	
+  ],
   //shortName: "shortname",
   pubDomain: "IMROI",
   github: "https://github.com/Geonovum/IMROI",
