@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-150043 imvertor Nightly-build.14-->
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240426-062014 imvertor Nightly-build.14-->
    <section id="global_package_IMROIDomein">
       <h3>Domein   IMROI - domein</h3>
       <section>
@@ -442,6 +442,23 @@
                   <tr>
                      <td>
                         
+                        <a class="link" href="#global_class_IMROIDomein_Dakconstructie">Dakconstructie</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_IMROIDomein_Dakconstructie_gebouw">maakt­Deel­Uit­Van: gebouw</a>
+                        
+                        Gebouw
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
                         <a class="link" href="#global_class_IMROIDomein_Bouwlaag">Bouwlaag</a>
                         
                         [ 1 .. * ]
@@ -452,23 +469,6 @@
                         [ 1 ]
                         </td>
                      <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_IMROIDomein_ConstructieMetDakbedekking">Constructie­Met­Dakbedekking</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_IMROIDomein_ConstructieMetDakbedekking_gebouw">maakt­Deel­Uit­Van: gebouw</a>
-                        
-                        Gebouw
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
-                        </td>
                   </tr>
                   <tr>
                      <td>
@@ -488,8 +488,8 @@
             
             </section>
          
-         <section id="global_class_IMROIDomein_InformatieObject">
-            <h5>   Informatie­Object</h5>
+         <section id="global_class_IMROIDomein_Dakconstructie">
+            <h5>   Dakconstructie</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -497,14 +497,85 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Informatie­Object</td>
+                     <td>Dakconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Constructie het proces van het bouwen van een structuur van een gebouw, Deze kan in
+                           sommige gevallen voorzien zijn van veiligheid systemen zoals afglij (daken)of omval
+                           constructies(muren). </p>
+                        
+                        <p>Dakbedekking specifiek verwijst naar het bedekken en beschermen van het dak van een
+                           gebouw. Voor de IMROI zit dit onderwerp erin, in verband met de ervaringen van brand
+                           voortplanting op bitumen of gesmolten/ smeltend isolatiemateriaal wat zich door stroming
+                           over en door objecten kan verplaatsen door dak zwaluwplaten of dakgoten en ontbranding
+                           op niet bedachte plekken kan veroorzaken.</p>
+                        
+                        </td>
                   </tr>
                   <tr>
                      <th>Indicatie abstract object</th>
-                     <td>Ja</td>
+                     <td>Nee</td>
                   </tr>
                </tbody>
             </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Dakconstructie_dakbedekking">dakbedekking</a>
+                        </td>
+                     <td>
+                        
+                        <p>Naamgeving of omschrijving van de ruimte.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Dakconstructie_hoofddraagconstructie">hoofddraagconstructie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Dakconstructie_type">type</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geeft aan type voorziening het is</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
             
             <h6>Overzicht relaties  </h6>
             
@@ -519,24 +590,24 @@
                   </tr>
                   <tr>
                      <td>
+                        Dakconstructie
+                        [ 1 .. * ]
                         
-                        <a class="link" href="#global_class_IMROIDomein_RepressiefObject">Repressief­Object</a>
+                        <a class="link" href="#detail_association_IMROIDomein_Dakconstructie_gebouw">maakt­Deel­Uit­Van: gebouw</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMROIDomein_Gebouw">Gebouw</a>
                         
                         [ 1 ]
-                        
-                        <a class="link" href="#detail_association_IMROIDomein_RepressiefObject_informatieObject">heeft: informatie­Object</a>
-                        
-                        Informatie­Object
-                        [ 0 .. * ]
                         </td>
                      <td>
                         
-                        <p>Gerelateerde Informatie­Object, waar het Repressief­Object informatie over heeft.</p>
+                        <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>
-                        Informatie­Object
+                        Dakconstructie
                         is specialisatie van
                         
                         <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
@@ -549,10 +620,10 @@
                   </tr>
                   <tr>
                      <td>
-                        Informatie­Object
+                        Dakconstructie
                         is specialisatie van
                         
-                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte">Virtuele­Ruimte</a>
+                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie">Constructie</a>
                         
                         </td>
                      <td></td>
@@ -703,6 +774,386 @@
                         is specialisatie van
                         
                         <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie">Constructie</a>
+                        
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_IMROIDomein_Ruimte">
+            <h5>   Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Een  deel van een gebouw, dat ten minste aan de onderzijde en/of de bovenzijde wordt
+                           begrensd door een scheidingsconstructie.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>
+                        NEN2580
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_geometrie">geometrie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Multi­Surface
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_omschrijving">omschrijving</a>
+                        </td>
+                     <td>
+                        
+                        <p>Naamgeving of omschrijving van de ruimte</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_type">type</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geeft aan type voorziening het is</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Ruimte
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_IMROIDomein_Ruimte_bouwlaag">maakt­Deel­Uit­Van: bouwlaag</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMROIDomein_Bouwlaag">Bouwlaag</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_IMROIDomein_InformatieObject">
+            <h5>   Informatie­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Informatie­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Ja</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_IMROIDomein_RepressiefObject">Repressief­Object</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMROIDomein_RepressiefObject_informatieObject">heeft: informatie­Object</a>
+                        
+                        Informatie­Object
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>Gerelateerde Informatie­Object, waar het Repressief­Object informatie over heeft.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Informatie­Object
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Informatie­Object
+                        is specialisatie van
+                        
+                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_IMROIDomein_Aanwezigen">
+            <h5>   Aanwezigen</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Aanwezigen</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Een of meerdere personen (of dieren) aanwezig in of op het repressief object.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalDieren">aantal dieren</a>
+                        </td>
+                     <td>
+                        
+                        <p>Maximaal aanwezige dieren per bouwlaag.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalNietZelfredzaam">aantal niet-zelfredzaam</a>
+                        </td>
+                     <td>
+                        
+                        <p>Maximaal aantal niet-zelfredzame bewoners per bouwlaag.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalPersoneel">aantal personeel</a>
+                        </td>
+                     <td>
+                        
+                        <p>Maximaal aantal aanwezig personeel per bouwlaag.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalTotaal">aantal totaal</a>
+                        </td>
+                     <td>
+                        
+                        <p>Maximaal aantal aanwezigen per bouwlaag.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_dagen">dagen</a>
+                        </td>
+                     <td>
+                        
+                        <p>De dagen waarop de contactpersoon te bereiken is.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_groepstype">groepstype</a>
+                        </td>
+                     <td>
+                        
+                        <p>Beschrijving van groepstype.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_tijdvakbegin">tijdvakbegin</a>
+                        </td>
+                     <td>
+                        
+                        <p>De begintijd waarop de contactpersoon te bereiken is.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_tijdvakeind">tijdvakeind</a>
+                        </td>
+                     <td>
+                        
+                        <p>De eindtijd waarop de contactpersoon te bereiken is.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Aanwezigen
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
                         
                         </td>
                      <td></td>
@@ -989,8 +1440,8 @@
             
             </section>
          
-         <section id="global_class_IMROIDomein_Aanwezigen">
-            <h5>   Aanwezigen</h5>
+         <section id="global_class_IMROIDomein_Sectoren">
+            <h5>   Sectoren</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -998,14 +1449,15 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Aanwezigen</td>
+                     <td>Sectoren</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
                         
-                        <p>Een of meerdere personen (of dieren) aanwezig in of op het repressief object.</p>
+                        <p>Sectoren verwijzen naar specifieke afgebakende delen of segmenten van een groter geheel,
+                           zoals een gebied.</p>
                         
                         </td>
                   </tr>
@@ -1032,220 +1484,34 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalDieren">aantal dieren</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_geometrie">geometrie</a>
                         </td>
+                     <td></td>
                      <td>
-                        
-                        <p>Maximaal aanwezige dieren per bouwlaag.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalNietZelfredzaam">aantal niet-zelfredzaam</a>
-                        </td>
-                     <td>
-                        
-                        <p>Maximaal aantal niet-zelfredzame bewoners per bouwlaag.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalPersoneel">aantal personeel</a>
-                        </td>
-                     <td>
-                        
-                        <p>Maximaal aantal aanwezig personeel per bouwlaag.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_aantalTotaal">aantal totaal</a>
-                        </td>
-                     <td>
-                        
-                        <p>Maximaal aantal aanwezigen per bouwlaag.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        GM_Multi­Surface
                         </td>
                      <td>1</td>
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_dagen">dagen</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_omschrijving">omschrijving</a>
                         </td>
-                     <td>
-                        
-                        <p>De dagen waarop de contactpersoon te bereiken is.</p>
-                        </td>
+                     <td></td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                         </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_groepstype">groepstype</a>
-                        </td>
-                     <td>
-                        
-                        <p>Beschrijving van groepstype.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_tijdvakbegin">tijdvakbegin</a>
-                        </td>
-                     <td>
-                        
-                        <p>De begintijd waarop de contactpersoon te bereiken is.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
-                        </td>
                      <td>0 .. 1</td>
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Aanwezigen_tijdvakeind">tijdvakeind</a>
-                        </td>
-                     <td>
-                        
-                        <p>De eindtijd waarop de contactpersoon te bereiken is.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Aanwezigen
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
-                        
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_IMROIDomein_ConstructieMetDakbedekking">
-            <h5>   Constructie­Met­Dakbedekking</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Constructie­Met­Dakbedekking</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Constructie het proces van het bouwen van een structuur van een gebouw, Deze kan in
-                           sommige gevallen voorzien zijn van veiligheid systemen zoals afglij (daken)of omval
-                           constructies(muren). </p>
-                        
-                        <p>Dakbedekking specifiek verwijst naar het bedekken en beschermen van het dak van een
-                           gebouw. Voor de IMROI zit dit onderwerp erin, in verband met de ervaringen van brand
-                           voortplanting op bitumen of gesmolten/ smeltend isolatiemateriaal wat zich door stroming
-                           over en door objecten kan verplaatsen door dak zwaluwplaten of dakgoten en ontbranding
-                           op niet bedachte plekken kan veroorzaken.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_ConstructieMetDakbedekking_dakbedekking">dakbedekking</a>
-                        </td>
-                     <td>
-                        
-                        <p>Naamgeving of omschrijving van de ruimte.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_ConstructieMetDakbedekking_hoofddraagconstructie">hoofddraagconstructie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_ConstructieMetDakbedekking_type">type</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_type">type</a>
                         </td>
                      <td>
                         
                         <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeSector">Type­Sector</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -1266,40 +1532,10 @@
                   </tr>
                   <tr>
                      <td>
-                        Constructie­Met­Dakbedekking
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_IMROIDomein_ConstructieMetDakbedekking_gebouw">maakt­Deel­Uit­Van: gebouw</a>
-                        
-                        
-                        <a class="link" href="#global_class_IMROIDomein_Gebouw">Gebouw</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Constructie­Met­Dakbedekking
+                        Sectoren
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Constructie­Met­Dakbedekking
-                        is specialisatie van
-                        
-                        <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie">Constructie</a>
+                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
                         
                         </td>
                      <td></td>
@@ -1398,6 +1634,115 @@
                   <tr>
                      <td>
                         Opstelplaats
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
+                        
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_IMROIDomein_Bereikbaarheid">
+            <h5>   Bereikbaarheid</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Bereikbaarheid</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>De bereikbaarheid van een pand of gebied voor de brandweer verwijst naar de mogelijkheid
+                           van brandweervoertuigen en -personeel om snel en veilig toegang te krijgen tot het
+                           pand of gebied in geval van een noodsituatie.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_geometrie">geometrie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Multi­Curve
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_omschrijving">omschrijving</a>
+                        </td>
+                     <td>
+                        
+                        <p>Toelichting op de bereikbaarheid.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_type">type</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geeft aan type voorziening het is.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Bereikbaarheid
                         is specialisatie van
                         
                         <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
@@ -2053,8 +2398,8 @@
             
             </section>
          
-         <section id="global_class_IMROIDomein_Bereikbaarheid">
-            <h5>   Bereikbaarheid</h5>
+         <section id="global_class_IMROIDomein_PointOfInterest">
+            <h5>   Point of interest</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2062,16 +2407,15 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Bereikbaarheid</td>
+                     <td>Point of interest</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
                         
-                        <p>De bereikbaarheid van een pand of gebied voor de brandweer verwijst naar de mogelijkheid
-                           van brandweervoertuigen en -personeel om snel en veilig toegang te krijgen tot het
-                           pand of gebied in geval van een noodsituatie.</p>
+                        <p>Ze dienen als referentiepunten, bestemmingen of interessante locaties die gebruikers
+                           kunnen gebruiken of helpen bij navigeren door een bepaald gebied.</p>
                         
                         </td>
                   </tr>
@@ -2098,22 +2442,19 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_geometrie">geometrie</a>
                         </td>
                      <td></td>
                      <td>
-                        GM_Multi­Curve
+                        GM_Multi­Point
                         </td>
                      <td>1</td>
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_omschrijving">omschrijving</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_omschrijving">omschrijving</a>
                         </td>
-                     <td>
-                        
-                        <p>Toelichting op de bereikbaarheid.</p>
-                        </td>
+                     <td></td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                         </td>
@@ -2121,14 +2462,14 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Bereikbaarheid_type">type</a>
+                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_type">type</a>
                         </td>
                      <td>
                         
-                        <p>Geeft aan type voorziening het is.</p>
+                        <p>Geeft aan type voorziening het is</p>
                         </td>
                      <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
+                        <a class="link" href="#detail_class_IMROIDomein_TypePOI">Type­POI</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2149,7 +2490,7 @@
                   </tr>
                   <tr>
                      <td>
-                        Bereikbaarheid
+                        Point of interest
                         is specialisatie van
                         
                         <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
@@ -2514,347 +2855,6 @@
                         is specialisatie van
                         
                         <a class="link" href="#global_class_IMROIDomein_Veiligheidsvoorziening">Veiligheidsvoorziening</a>
-                        
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_IMROIDomein_Ruimte">
-            <h5>   Ruimte</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Ruimte</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Een  deel van een gebouw, dat ten minste aan de onderzijde en/of de bovenzijde wordt
-                           begrensd door een scheidingsconstructie.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>
-                        NEN2580
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_geometrie">geometrie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Multi­Surface
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_omschrijving">omschrijving</a>
-                        </td>
-                     <td>
-                        
-                        <p>Naamgeving of omschrijving van de ruimte</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Ruimte_type">type</a>
-                        </td>
-                     <td>
-                        
-                        <p>Geeft aan type voorziening het is</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Ruimte
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_IMROIDomein_Ruimte_bouwlaag">maakt­Deel­Uit­Van: bouwlaag</a>
-                        
-                        
-                        <a class="link" href="#global_class_IMROIDomein_Bouwlaag">Bouwlaag</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Ruimte
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_NEN3610_IdentificeerbaarObject">Identificeerbaar­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Klasse opgenomen om identificatie-attributen in te definiëren.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_IMROIDomein_Sectoren">
-            <h5>   Sectoren</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Sectoren</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Sectoren verwijzen naar specifieke afgebakende delen of segmenten van een groter geheel,
-                           zoals een gebied.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_geometrie">geometrie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Multi­Surface
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_omschrijving">omschrijving</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_Sectoren_type">type</a>
-                        </td>
-                     <td>
-                        
-                        <p>Geeft aan type voorziening het is</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypeSector">Type­Sector</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Sectoren
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
-                        
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_IMROIDomein_PointOfInterest">
-            <h5>   Point of interest</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Point of interest</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Ze dienen als referentiepunten, bestemmingen of interessante locaties die gebruikers
-                           kunnen gebruiken of helpen bij navigeren door een bepaald gebied.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_geometrie">geometrie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Multi­Point
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_omschrijving">omschrijving</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMROIDomein_PointOfInterest_type">type</a>
-                        </td>
-                     <td>
-                        
-                        <p>Geeft aan type voorziening het is</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_IMROIDomein_TypePOI">Type­POI</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Point of interest
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_IMROIDomein_InformatieObject">Informatie­Object</a>
                         
                         </td>
                      <td></td>
@@ -4079,6 +4079,173 @@
                   </div>
                </section>
             
+            <section id="detail_class_IMROIDomein_Dakconstructie">
+               <h6>   Dakconstructie</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Dakconstructie_dakbedekking">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Dakconstructie">Dakconstructie</a> dakbedekking</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>dakbedekking</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Naamgeving of omschrijving van de ruimte.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Dakconstructie_hoofddraagconstructie">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Dakconstructie">Dakconstructie</a> hoofddraagconstructie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>hoofddraagconstructie</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Dakconstructie_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Dakconstructie">Dakconstructie</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Geeft aan type voorziening het is</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_IMROIDomein_Dakconstructie_gebouw">
+                  <h7>Relatiesoort details  <a href="#global_class_IMROIDomein_Dakconstructie">Dakconstructie</a> maakt­Deel­Uit­Van</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>maakt­Deel­Uit­Van</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMROIDomein_Gebouw">Gebouw</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
             
             <section id="detail_class_IMROIDomein_Bouwlaag">
                <h6>   Bouwlaag</h6>
@@ -4226,6 +4393,538 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_IMROIDomein_Ruimte">
+               <h6>   Ruimte</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              GM_Multi­Surface
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_omschrijving">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> omschrijving</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>omschrijving</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Naamgeving of omschrijving van de ruimte</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Geeft aan type voorziening het is</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_IMROIDomein_Ruimte_bouwlaag">
+                  <h7>Relatiesoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> maakt­Deel­Uit­Van</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>maakt­Deel­Uit­Van</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMROIDomein_Bouwlaag">Bouwlaag</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            
+            <section id="detail_class_IMROIDomein_Aanwezigen">
+               <h6>   Aanwezigen</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalDieren">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal dieren</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>aantal dieren</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Maximaal aanwezige dieren per bouwlaag.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalNietZelfredzaam">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal niet-zelfredzaam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>aantal niet-zelfredzaam</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Maximaal aantal niet-zelfredzame bewoners per bouwlaag.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalPersoneel">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal personeel</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>aantal personeel</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Maximaal aantal aanwezig personeel per bouwlaag.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalTotaal">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal totaal</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>aantal totaal</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Maximaal aantal aanwezigen per bouwlaag.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_dagen">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> dagen</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>dagen</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De dagen waarop de contactpersoon te bereiken is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_groepstype">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> groepstype</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>groepstype</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Beschrijving van groepstype.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_tijdvakbegin">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> tijdvakbegin</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>tijdvakbegin</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De begintijd waarop de contactpersoon te bereiken is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_tijdvakeind">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> tijdvakeind</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>tijdvakeind</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De eindtijd waarop de contactpersoon te bereiken is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -4700,11 +5399,11 @@
                   </div>
                </section>
             
-            <section id="detail_class_IMROIDomein_Aanwezigen">
-               <h6>   Aanwezigen</h6>
+            <section id="detail_class_IMROIDomein_Sectoren">
+               <h6>   Sectoren</h6>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalDieren">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal dieren</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4712,159 +5411,12 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>aantal dieren</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Maximaal aanwezige dieren per bouwlaag.</p>
-                              
-                              </td>
+                           <td>geometrie</td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
                            <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalNietZelfredzaam">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal niet-zelfredzaam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>aantal niet-zelfredzaam</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Maximaal aantal niet-zelfredzame bewoners per bouwlaag.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalPersoneel">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal personeel</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>aantal personeel</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Maximaal aantal aanwezig personeel per bouwlaag.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_aantalTotaal">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> aantal totaal</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>aantal totaal</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Maximaal aantal aanwezigen per bouwlaag.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              GM_Multi­Surface
                               </td>
                         </tr>
                         <tr>
@@ -4887,8 +5439,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_dagen">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> dagen</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_omschrijving">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> omschrijving</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4896,16 +5448,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>dagen</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De dagen waarop de contactpersoon te bereiken is.</p>
-                              
-                              </td>
+                           <td>omschrijving</td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
@@ -4915,98 +5458,6 @@
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_groepstype">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> groepstype</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>groepstype</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Beschrijving van groepstype.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_AanwezigheidGroepType">Aanwezigheid­Groep­Type</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_tijdvakbegin">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> tijdvakbegin</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>tijdvakbegin</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De begintijd waarop de contactpersoon te bereiken is.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
                            <td>0 .. 1</td>
                         </tr>
                         <tr>
@@ -5025,141 +5476,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Aanwezigen_tijdvakeind">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Aanwezigen">Aanwezigen</a> tijdvakeind</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>tijdvakeind</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De eindtijd waarop de contactpersoon te bereiken is.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#global_class_IMROIDomein_Tijd">Tijd</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_IMROIDomein_ConstructieMetDakbedekking">
-               <h6>   Constructie­Met­Dakbedekking</h6>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_ConstructieMetDakbedekking_dakbedekking">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_ConstructieMetDakbedekking">Constructie­Met­Dakbedekking</a> dakbedekking</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>dakbedekking</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Naamgeving of omschrijving van de ruimte.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeDakbedekking">Type­Dakbedekking</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_ConstructieMetDakbedekking_hoofddraagconstructie">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_ConstructieMetDakbedekking">Constructie­Met­Dakbedekking</a> hoofddraagconstructie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>hoofddraagconstructie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeDraagconstructie">Type­Draagconstructie</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_ConstructieMetDakbedekking_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_ConstructieMetDakbedekking">Constructie­Met­Dakbedekking</a> type</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> type</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -5181,7 +5499,7 @@
                         <tr>
                            <th>Formaat</th>
                            <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeSector">Type­Sector</a>
                               </td>
                         </tr>
                         <tr>
@@ -5199,41 +5517,6 @@
                         <tr>
                            <th>Indicatie identificerend</th>
                            <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_IMROIDomein_ConstructieMetDakbedekking_gebouw">
-                  <h7>Relatiesoort details  <a href="#global_class_IMROIDomein_ConstructieMetDakbedekking">Constructie­Met­Dakbedekking</a> maakt­Deel­Uit­Van</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>maakt­Deel­Uit­Van</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Gerelateerd Gebouw, waar de constructie met dakbedekking onderdeel van uit maakt.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_IMROIDomein_Gebouw">Gebouw</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
                         </tr>
                      </tbody>
                   </table>
@@ -5304,6 +5587,139 @@
                            <th>Formaat</th>
                            <td>
                               <a class="link" href="#detail_class_IMROIDomein_TypeOpstelplaats">Type­Opstelplaats</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_IMROIDomein_Bereikbaarheid">
+               <h6>   Bereikbaarheid</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              GM_Multi­Curve
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_omschrijving">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> omschrijving</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>omschrijving</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Toelichting op de bereikbaarheid.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Geeft aan type voorziening het is.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
                               </td>
                         </tr>
                         <tr>
@@ -5993,11 +6409,11 @@
                   </div>
                </section>
             
-            <section id="detail_class_IMROIDomein_Bereikbaarheid">
-               <h6>   Bereikbaarheid</h6>
+            <section id="detail_class_IMROIDomein_PointOfInterest">
+               <h6>   Point of interest</h6>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> geometrie</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6010,7 +6426,7 @@
                         <tr>
                            <th>Formaat</th>
                            <td>
-                              GM_Multi­Curve
+                              GM_Multi­Point
                               </td>
                         </tr>
                         <tr>
@@ -6033,8 +6449,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_omschrijving">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> omschrijving</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_omschrijving">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> omschrijving</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6043,15 +6459,6 @@
                         <tr>
                            <th>Naam</th>
                            <td>omschrijving</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Toelichting op de bereikbaarheid.</p>
-                              
-                              </td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
@@ -6079,8 +6486,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Bereikbaarheid_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Bereikbaarheid">Bereikbaarheid</a> type</h7>
+               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> type</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6095,14 +6502,14 @@
                            <td>
                               
                               
-                              <p>Geeft aan type voorziening het is.</p>
+                              <p>Geeft aan type voorziening het is</p>
                               
                               </td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
                            <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeBereikbaarheid">Type­Bereikbaarheid</a>
+                              <a class="link" href="#detail_class_IMROIDomein_TypePOI">Type­POI</a>
                               </td>
                         </tr>
                         <tr>
@@ -6462,413 +6869,6 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_IMROIDomein_Ruimte">
-               <h6>   Ruimte</h6>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              GM_Multi­Surface
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_omschrijving">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> omschrijving</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>omschrijving</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Naamgeving of omschrijving van de ruimte</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Ruimte_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>type</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Geeft aan type voorziening het is</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeRuimte">Type­Ruimte</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_IMROIDomein_Ruimte_bouwlaag">
-                  <h7>Relatiesoort details  <a href="#global_class_IMROIDomein_Ruimte">Ruimte</a> maakt­Deel­Uit­Van</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>maakt­Deel­Uit­Van</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_IMROIDomein_Bouwlaag">Bouwlaag</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_IMROIDomein_Sectoren">
-               <h6>   Sectoren</h6>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              GM_Multi­Surface
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_omschrijving">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> omschrijving</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>omschrijving</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_Sectoren_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_Sectoren">Sectoren</a> type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>type</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Geeft aan type voorziening het is</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypeSector">Type­Sector</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_IMROIDomein_PointOfInterest">
-               <h6>   Point of interest</h6>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              GM_Multi­Point
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_omschrijving">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> omschrijving</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>omschrijving</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_IMROIDomein_PointOfInterest_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_IMROIDomein_PointOfInterest">Point of interest</a> type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>type</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Geeft aan type voorziening het is</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_IMROIDomein_TypePOI">Type­POI</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -10204,7 +10204,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240424-150043 imvertor Nightly-build.14-->
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20240426-062014 imvertor Nightly-build.14-->
    <section>
       <h3>Codelijst inhoud   </h3>
       <section id="detail_class_IMROIDomein_TypeDraagconstructie">
