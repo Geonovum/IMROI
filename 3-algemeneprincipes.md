@@ -180,7 +180,12 @@ Wijzigen van de eindregistratie leidt niet tot een nieuwe versie van een object.
 De levensduur en historie van een object worden bijgehouden in de
 registratiegegevens van het IMROI-object. De historie van een object in de
 werkelijkheid wordt weergegeven in twee tijdlijnen: de tijdlijn geldigheid en de
-tijdlijn registratie.
+tijdlijn registratie. De tijdstippen van het ontstaan en vervallen van een
+object worden vastgelegd in de levensduur.
+
+Tijdstippen worden vastgelegd in het formaat van
+[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html), dus
+jjjj-mm-ddThh:ii:ss, waarin j jaar, m maand, d dag, h uur, i minuut, s seconde.
 
 #### Tijdlijn geldigheid
 
@@ -189,6 +194,10 @@ laten zien wanneer de eigenschappen ervan veranderen in de echte wereld. Bij
 elke nieuwe versie van een IMROI-object worden registratiegegevens toegevoegd.
 Deze gegevens bevatten twee attributen: 'beginGeldigheid' en 'eindGeldigheid',
 die aangeven voor welke periode deze versie van het IMROI-object geldig is.
+
+De tijdstippen voor beginGeldigheid en eindGeldigheid worden bij een
+IMROI-object vastgelegd met een nauwkeurigheid tot op de dag, bijvoorbeeld
+2024-04-26.
 
 #### Tijdlijn registratie
 
@@ -200,12 +209,25 @@ registratiegegevens toegevoegd. Deze gegevens bevatten twee attributen:
 registratieperiode deze versie van het IMROI-object geldig is. Over het algemeen
 loopt de tijdlijn registratie achter op de tijdlijn geldigheid.
 
+De tijdstippen voor tijdstipRegistratie en eindRegistratie worden bij een
+IMROI-object vastgelegd met een nauwkeurigheid tot op de seconde, bijvoorbeeld
+2024-04-26T12:34:56.
+
 #### Levensduur
 
 De levensduur van een object in de echte wereld begint wanneer het voor het
 eerst verschijnt en eindigt wanneer het verdwijnt. De registratie van de
 levensduur vertelt ons voor welke periode het IMROI-object de echte wereld
 vertegenwoordigt.
+
+Bij het ontstaan en vervallen van een IMROI-object worden registratiegegevens
+voor de levensduur toegevoegd. Deze gegevens bevatten twee attributen:
+'objectBegintijd' en 'objectEindtijd', die aangeven voor welke periode deze
+versie van het IMROI-object geldig is.
+
+De tijdstippen voor objectBegintijd en objectEindtijd worden bij een
+IMROI-object vastgelegd met een nauwkeurigheid tot op de dag, bijvoorbeeld
+2024-04-26.
 
 ## RepressiefObject en informatieobjecten
 
