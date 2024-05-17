@@ -84,7 +84,7 @@ Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
 | Sectoren                               | Multivlak     |
 | Opstelplaats                           | Punt          |
 | Bereikbaarheid                         | Multilijn     |
-| ToegangTerrein                         | Multipunt     |
+| Toegang                         | Multipunt     |
 | VindplaatsSleutel                      | Punt          |
 | Dreiging                               | Punt          |
 | Opslagvoorziening                      | Punt          |
@@ -266,7 +266,7 @@ aan welk type RepressiefObject.
 | Sectoren                                   | ×        | ×        | ×       | ×           | ×       |
 | Opstelplaats                               | ×        | ×        | ×       | ×           | ×       |
 | Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       |
-| ToegangTerrein                             | ×        | ×        | ×       | ×           | ×       |
+| Toegang                                    | ×        | ×        | ×       | ×           | ×       |
 | VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       |
 | Dreiging                                   | ×        | ×        | ×       | ×           | ×       |
 | Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       |
