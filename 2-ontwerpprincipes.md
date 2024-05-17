@@ -67,36 +67,36 @@ Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
 ![Afbeelding met tekst, diagram, Plan, Technische tekening Automatisch
-gegenereerde beschrijving](media/49cd19328e3a2088b53b5bb13af7adb5.png)
+gegenereerde beschrijving](media/c8df6be1adb377a06bf15287bcebe1de.png)
 
-| IMROI                                  | NEN3610                                |
-|----------------------------------------|----------------------------------------|
-| RepressiefObject                       | VirtueleRuimte                         |
+| IMROI                                  | NEN3610                                  |
+|----------------------------------------|------------------------------------------|
+| RepressiefObject                       | VirtueleRuimte                           |
 | Terrein                                | Begroeiing; OppervlakteWater; Verharding |
-| Gebouw                                 | Gebouw                                 |
-| Dakconstructie                         | Constructie                            |
-| Bouwlaag                               | Constructie                            |
-| Ruimte                                 | Constructie                            |
-| *InformatieObject*                     | *VirtueleRuimte*                       |
-| Aanwezigen                             | *VirtueleRuimte*                       |
-| BHVOrganisatie                         | *VirtueleRuimte*                       |
-| Contactpersoon                         | *VirtueleRuimte*                       |
-| Sectoren                               | *VirtueleRuimte*                       |
-| Opstelplaats                           | *VirtueleRuimte*                       |
-| Bereikbaarheid                         | *VirtueleRuimte*                       |
-| Toegang                         | Constructie; *VirtueleRuimte*           |
-| VindplaatsSleutel                      | *VirtueleRuimte*                       |
-| Dreiging                               | *VirtueleRuimte*                       |
-| Opslagvoorziening                      | Constructie                            |
-| Schadecirkel                           | *VirtueleRuimte*                       |
-| Point of interest                      | *VirtueleRuimte*                       |
-| Veiligheidsvoorziening                 | *VirtueleRuimte*                       |
-| TechnischeVeiligheidsvoorziening       | *VirtueleRuimte*                       |
-| BouwkundigeVeiligheidsvoorziening      | *VirtueleRuimte*                       |
-| OrganisatorischeVeiligheidsvoorziening | *VirtueleRuimte*                       |
-| Beheersmaatregel                       | *VirtueleRuimte*                       |
-| GebiedsgerichteAanpak                  | *VirtueleRuimte*                       |
-| Risicocontouren                        | *VirtueleRuimte*                       |
+| Gebouw                                 | Gebouw                                   |
+| Dakconstructie                         | Constructie                              |
+| Bouwlaag                               | Constructie                              |
+| Ruimte                                 | Constructie                              |
+| *InformatieObject*                     | *VirtueleRuimte*                         |
+| Aanwezigen                             | *VirtueleRuimte*                         |
+| BHVOrganisatie                         | *VirtueleRuimte*                         |
+| Contactpersoon                         | *VirtueleRuimte*                         |
+| Sectoren                               | *VirtueleRuimte*                         |
+| Opstelplaats                           | *VirtueleRuimte*                         |
+| Bereikbaarheid                         | *VirtueleRuimte*                         |
+| Toegang                                | Constructie; *VirtueleRuimte*            |
+| VindplaatsSleutel                      | *VirtueleRuimte*                         |
+| Dreiging                               | *VirtueleRuimte*                         |
+| Opslagvoorziening                      | Constructie                              |
+| Schadecirkel                           | *VirtueleRuimte*                         |
+| Point of interest                      | *VirtueleRuimte*                         |
+| Veiligheidsvoorziening                 | *VirtueleRuimte*                         |
+| TechnischeVeiligheidsvoorziening       | *VirtueleRuimte*                         |
+| BouwkundigeVeiligheidsvoorziening      | *VirtueleRuimte*                         |
+| OrganisatorischeVeiligheidsvoorziening | *VirtueleRuimte*                         |
+| Beheersmaatregel                       | *VirtueleRuimte*                         |
+| GebiedsgerichteAanpak                  | *VirtueleRuimte*                         |
+| Risicocontouren                        | *VirtueleRuimte*                         |
 
 ### Metamodel voor Informatiemodelering (MIM)
 
