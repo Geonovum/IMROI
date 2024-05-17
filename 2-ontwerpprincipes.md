@@ -72,7 +72,7 @@ gegenereerde beschrijving](media/49cd19328e3a2088b53b5bb13af7adb5.png)
 | IMROI                                  | NEN3610                                |
 |----------------------------------------|----------------------------------------|
 | RepressiefObject                       | VirtueleRuimte                         |
-| Terrein                                | Begroeiing OppervlakteWater Verharding |
+| Terrein                                | Begroeiing; OppervlakteWater; Verharding |
 | Gebouw                                 | Gebouw                                 |
 | Dakconstructie                         | Constructie                            |
 | Bouwlaag                               | Constructie                            |
@@ -84,7 +84,7 @@ gegenereerde beschrijving](media/49cd19328e3a2088b53b5bb13af7adb5.png)
 | Sectoren                               | *VirtueleRuimte*                       |
 | Opstelplaats                           | *VirtueleRuimte*                       |
 | Bereikbaarheid                         | *VirtueleRuimte*                       |
-| Toegang                         | Constructie *VirtueleRuimte*           |
+| Toegang                         | Constructie; *VirtueleRuimte*           |
 | VindplaatsSleutel                      | *VirtueleRuimte*                       |
 | Dreiging                               | *VirtueleRuimte*                       |
 | Opslagvoorziening                      | Constructie                            |
