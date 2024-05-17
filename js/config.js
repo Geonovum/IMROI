@@ -22,7 +22,7 @@ let respecConfig = {
   //specType: "BP",                 // Best Practice
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
-  pubDomain: "imroi",
+  //pubDomain: "imroi",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //licence: "cc0",                 // Public Domain Dedication
