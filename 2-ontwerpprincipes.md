@@ -84,7 +84,7 @@ gegenereerde beschrijving](media/49cd19328e3a2088b53b5bb13af7adb5.png)
 | Sectoren                               | *VirtueleRuimte*                       |
 | Opstelplaats                           | *VirtueleRuimte*                       |
 | Bereikbaarheid                         | *VirtueleRuimte*                       |
-| ToegangTerrein                         | Constructie *VirtueleRuimte*           |
+| Toegang                         | Constructie *VirtueleRuimte*           |
 | VindplaatsSleutel                      | *VirtueleRuimte*                       |
 | Dreiging                               | *VirtueleRuimte*                       |
 | Opslagvoorziening                      | Constructie                            |
