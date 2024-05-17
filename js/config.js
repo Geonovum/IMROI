@@ -1,8 +1,9 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
+  maxTocLevel: 4,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "IMROI: Repressieve Object Informatie",
+  title: "Repressieve Object Informatie",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
   specStatus: "cv",               // Consultatieversie
@@ -83,10 +84,7 @@ let respecConfig = {
       name: "Sjoerd Harmsen",
       company: "NIPV",  
     },	
-  ],
-  
-  
-  
+  ],  
   // TODO: Vul de github URL in.
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/IMROI",
