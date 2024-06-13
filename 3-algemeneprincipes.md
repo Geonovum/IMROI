@@ -84,7 +84,7 @@ Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
 | Sectoren                               | Multivlak     |
 | Opstelplaats                           | Punt          |
 | Bereikbaarheid                         | Multilijn     |
-| Toegang                         | Multipunt     |
+| Toegang                                | Multipunt     |
 | VindplaatsSleutel                      | Punt          |
 | Dreiging                               | Punt          |
 | Opslagvoorziening                      | Punt          |
@@ -232,16 +232,16 @@ IMROI-object vastgelegd met een nauwkeurigheid tot op de dag, bijvoorbeeld
 ## RepressiefObject en informatieobjecten
 
 Een RepressiefObject is van het type Gebouw, Natuur, Water, Evenement of Infra.
-In het IMROI worden vanuit het RepressiefObject relaties gelegd met
-informatieobjecten. Niet elk informatieobject is van toepassing op elk type
-RepressiefObject. Om de dataconsistentie te waarborgen, worden de volgende
-regels toegepast:
+In het IMROI worden vanuit het RepressiefObject of Bouwlaag relaties gelegd met
+informatieobjecten. Niet elk informatieobject is van toepassing voor elk type
+RepressiefObject of Bouwlaag. Om de dataconsistentie te waarborgen, worden de
+volgende regels toegepast:
 
 -   BHVOrganisatie als Informatieobject komt alleen voor bij een Repressief
-    Object van het type Gebouw, Evenement of Infra.
+    Object van het type Gebouw, Evenement of Infra, of bij Bouwlaag.
 
 -   Bouwkundige veiligheidsvoorzieningen als Informatieobject komt voor bij een
-    Repressief Object van het type Gebouw.
+    Repressief Object van het type Gebouw, of bij Bouwlaag.
 
 -   Points of Interest als informatieobject komt alleen voor bij Repressief
     Object van het type Natuur.
@@ -258,24 +258,24 @@ regels toegepast:
 De onderstaande tabel geeft aan welke informatieobjecten mogen worden gekoppeld
 aan welk type RepressiefObject.
 
-| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* |
-|--------------------------------------------|----------|----------|---------|-------------|---------|
-| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       |
-| BHVOrganisatie                             | ×        |          |         | ×           | ×       |
-| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       |
-| Sectoren                                   | ×        | ×        | ×       | ×           | ×       |
-| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       |
-| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       |
-| Toegang                                    | ×        | ×        | ×       | ×           | ×       |
-| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       |
-| Dreiging                                   | ×        | ×        | ×       | ×           | ×       |
-| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       |
-| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       |
-| Points of interest                         |          | ×        |         |             |         |
-| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       |
-| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       |
-| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         |
-| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       |
-| Beheersmaatregel                           |          |          | ×       |             |         |
-| GebiedsgerichteAanpak                      |          | ×        |         |             |         |
-| Risicocontouren                            |          | ×        | ×       |             | ×       |
+| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* | *Boulaag* |
+|--------------------------------------------|----------|----------|---------|-------------|---------|-----------|
+| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       | ×         |
+| BHVOrganisatie                             | ×        |          |         | ×           | ×       | ×         |
+| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       | ×         |
+| Sectoren                                   | ×        | ×        | ×       | ×           | ×       | ×         |
+| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       | ×         |
+| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       | ×         |
+| Toegang                                    | ×        | ×        | ×       | ×           | ×       | ×         |
+| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       | ×         |
+| Dreiging                                   | ×        | ×        | ×       | ×           | ×       | ×         |
+| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       | ×         |
+| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       | ×         |
+| Points of interest                         |          | ×        |         |             |         |           |
+| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       | ×         |
+| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       | ×         |
+| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         | ×         |
+| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       | ×         |
+| Beheersmaatregel                           |          |          | ×       |             |         |           |
+| GebiedsgerichteAanpak                      |          | ×        |         |             |         |           |
+| Risicocontouren                            |          | ×        | ×       |             | ×       |           |
