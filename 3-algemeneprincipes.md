@@ -256,26 +256,26 @@ volgende regels toegepast:
     RepressiefObject van het type Natuur, Water of Infra.
 
 De onderstaande tabel geeft aan welke informatieobjecten mogen worden gekoppeld
-aan welk type RepressiefObject.
+aan welk type RepressiefObject of Bouwlaag.
 
-| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* | *Boulaag* |
-|--------------------------------------------|----------|----------|---------|-------------|---------|-----------|
-| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       | ×         |
-| BHVOrganisatie                             | ×        |          |         | ×           | ×       | ×         |
-| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       | ×         |
-| Sectoren                                   | ×        | ×        | ×       | ×           | ×       | ×         |
-| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       | ×         |
-| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       | ×         |
-| Toegang                                    | ×        | ×        | ×       | ×           | ×       | ×         |
-| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       | ×         |
-| Dreiging                                   | ×        | ×        | ×       | ×           | ×       | ×         |
-| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       | ×         |
-| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       | ×         |
-| Points of interest                         |          | ×        |         |             |         |           |
-| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       | ×         |
-| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       | ×         |
-| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         | ×         |
-| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       | ×         |
-| Beheersmaatregel                           |          |          | ×       |             |         |           |
-| GebiedsgerichteAanpak                      |          | ×        |         |             |         |           |
-| Risicocontouren                            |          | ×        | ×       |             | ×       |           |
+| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* | *Bouwlaag* |
+|--------------------------------------------|----------|----------|---------|-------------|---------|------------|
+| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       | ×          |
+| BHVOrganisatie                             | ×        |          |         | ×           | ×       | ×          |
+| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       | ×          |
+| Sectoren                                   | ×        | ×        | ×       | ×           | ×       | ×          |
+| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       | ×          |
+| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       | ×          |
+| Toegang                                    | ×        | ×        | ×       | ×           | ×       | ×          |
+| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       | ×          |
+| Dreiging                                   | ×        | ×        | ×       | ×           | ×       | ×          |
+| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       | ×          |
+| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       | ×          |
+| Points of interest                         |          | ×        |         |             |         |            |
+| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       | ×          |
+| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       | ×          |
+| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         | ×          |
+| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       | ×          |
+| Beheersmaatregel                           |          |          | ×       |             |         |            |
+| GebiedsgerichteAanpak                      |          | ×        |         |             |         |            |
+| Risicocontouren                            |          | ×        | ×       |             | ×       |            |
