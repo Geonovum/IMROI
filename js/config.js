@@ -70,7 +70,7 @@ let respecConfig = {
     },
 	  {
       name: "Joost Deen",
-      company: "Veiligheidsregio",
+      company: "Safety Consulting and Technology",
     },
 	    {
       name: "Mark Twisk",
