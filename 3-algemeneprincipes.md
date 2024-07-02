@@ -41,7 +41,7 @@ informatie over de objecten binnen de veiligheidsketen, waardoor deze informatie
 landelijk toegankelijk is en kan worden gebruikt voor verschillende
 toepassingen.
 
-De Veiligheidsregio conformeert zich aan de IMROI-standaard als het om data
+De Veiligheidsregio conformeert zich aan het IMROI als het om data
 deling met het NIPV gaat. In samenwerking met de eigen softwareleverancier zorgt
 de Veiligheidsregio ervoor dat de gegevens volgens de vastgestelde
 uitwisselstandaard beschikbaar worden gesteld aan de landelijke voorziening van
