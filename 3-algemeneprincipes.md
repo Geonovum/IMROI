@@ -30,7 +30,7 @@ passende maatregelen te nemen.
 
 ## Landelijke voorziening
 
-De landelijke voorziening, beheerd door het Nationaal Instituut Publieke
+De landelijke voorziening DATA4OOV, beheerd door het Nationaal Instituut Publieke
 Veiligheid (NIPV), is verantwoordelijk voor de opslag en verdere distributie van
 de IMROI-objecten naar de andere veiligheidsregio's. Dit zorgt ervoor dat de
 gegevens op een gestandaardiseerde en consistente manier worden uitgewisseld
