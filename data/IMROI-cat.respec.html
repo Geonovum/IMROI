@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20241212-081556 imvertor 4.2.0-->
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20241212-082003 imvertor 4.2.0-->
    <section id="global_package_IMROIdomein">
       <h3>Domein   IMROI - domein</h3>
       <section id="EAID_F0702C87_77BC_4f87_90C6_7A2C434CAA31">
@@ -2431,10 +2431,9 @@
                   </tr>
                   <tr>
                      <th>
-                        
-                        
-                        <name>Type­Veiligheidsvoorziening</name>
-                        
+                        <a class="link" href="#detail_d64251e17495">
+                           Type­Veiligheidsvoorziening
+                           </a>
                         </th>
                      <td></td>
                   </tr>
@@ -3147,6 +3146,17 @@
          
          <section id="global_class_IMROIdomein_IMROIobject">
             <h5>   IMROI-object</h5>
+            
+            <section id="EAID_B1D49760_E1CC_4129_9505_A475ECF4A5AF">
+               <h6>   IMROI-object - detail</h6>
+               <div class="imageinfo ">
+                  <figure><img src="data/Images/EAID_B1D49760_E1CC_4129_9505_A475ECF4A5AF.png" usemap="#imagemap-EAID_B1D49760_E1CC_4129_9505_A475ECF4A5AF" alt="Diagram: IMROI-object - detail"><figcaption>IMROI-object</figcaption>
+                  </figure><map name="imagemap-EAID_B1D49760_E1CC_4129_9505_A475ECF4A5AF"><area shape="rect" alt="Tijdvak" coords="523,465,658,605" href="#global_class_IMROIdomein_Tijdvak"><area shape="rect" alt="Deelbaar" coords="288,326,490,489" href="#global_class_IMROIdomein_Deelbaar"><area shape="rect" alt="" coords="293,490,454,718" href="#global_class_IMROIdomein_Deelstatus"><area shape="rect" alt="" coords="48,490,237,647" href="#global_class_IMROIdomein_Deelniveau"><area shape="rect" alt="Registratie" coords="523,59,733,338" href="#global_class_NEN3610_Registratie"><area shape="rect" alt="IdentificeerbaarObject" coords="52,65,262,187" href="#global_class_NEN3610_IdentificeerbaarObject"><area shape="rect" alt="IMROI-object" coords="52,257,235,396" href="#global_class_IMROIdomein_IMROIobject"></map><p>
+                     
+                     <p></p>
+                     </p>
+               </div>
+            </section>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -6453,6 +6463,22 @@
                   </table>
                   </div>
                
+               <div class="deepheader" id="detail_d64251e17495">
+                  <h7>Constraint details  <a href="#global_class_IMROIdomein_Veiligheidsvoorziening">Veiligheidsvoorziening</a> Type­Veiligheidsvoorziening</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>OCL</th>
+                           <td>context Veiligheidsvoorziening inv: if self.type = 'brandwerende scheiding' then self.geometrie.ocl­Is­Type­Of(GM_Curve)
+                              else if self.type = 'hoofdafsluiter CV' then self.geometrie.ocl­Is­Type­Of(GM_Point)
+                              else true endif</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
                </section>
             
             <section id="detail_class_IMROIdomein_Beheersmaatregel">
@@ -10971,7 +10997,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardelijsten</h2>
-   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20241212-081556 imvertor 4.2.0-->
+   <!--MIMCM-IMROI-conceptueelmodel-1.0-0-20231106-20241212-082003 imvertor 4.2.0-->
    <section>
       <h3>Codelijst inhoud   </h3>
       <section id="detail_class_IMROIdomein_TypeDraagconstructie">
