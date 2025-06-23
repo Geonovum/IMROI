@@ -41,7 +41,7 @@ let respecConfig = {
   //previousVersion: "0.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2024-05-21",
-  prev_version: "2024-05-21",
+  latestVersion: "2024-05-21",
   previousMaturity: "CV",
   //-- TODO: de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
