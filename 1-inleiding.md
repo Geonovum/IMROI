@@ -24,11 +24,15 @@ veiligheidsregio’s. Het beschreef een uniforme vastlegging van gegevens over (
 begane grond van) een pand en zijn omgeving.
 
 Negen jaar later, in 2019, bleek dat IMDBK niet meer voldeed aan de
-informatiebehoefte van de veiligheidsregio’s. Om deze reden is een werkgroep aan
-de slag gegaan om te onderzoeken hoe IMDBK doorontwikkeld moest worden om weer
-aan deze informatiebehoefte te voldoen. In de werkgroep waren vertegenwoordigers
-van verschillende veiligheidsregio’s betrokken, waaronder Noord-Holland-Noord,
-Zaanstreek Waterland, Utrecht, Friesland, Brabant-Zuidoost, Flevoland, Gooi- en
+informatiebehoefte van de veiligheidsregio’s. Om deze reden gaf de Regiegroep
+Informatiegestuurd Werken vanuit het NIPV opdracht om te onderzoeken hoe IMDBK
+doorontwikkeld moest worden om weer aan deze informatiebehoefte te voldoen. De
+vakgroep Geo & BI speelde hierbij een belangrijke rol en stelde een werkgroep in
+als subgroep, genaamd de Beheergroep IMROI.
+
+In de Beheergroep IMROI waren vertegenwoordigers van verschillende
+veiligheidsregio’s betrokken, waaronder Noord-Holland-Noord, Zaanstreek
+Waterland, Utrecht, Friesland, Brabant-Zuidoost, Flevoland, Gooi- en
 Vechtstreek, Limburg-Noord en Rotterdam-Rijnmond. Daarnaast was ook het
 Instituut Fysieke Veiligheid (IFV) aangesloten bij de werkgroep.
 
