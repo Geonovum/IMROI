@@ -3,16 +3,16 @@ document.getElementsByTagName('body')[0].onload = function () {
 	if (typeof respecConfig == 'undefined' || respecConfig.specStatus == 'WV' || respecConfig.specStatus == 'wv') {
 		if (document.respec) {		
 			document.respec.ready.then(function () {				
-			 addUrlsToDl();
+			 addUrlsToHeader();
 			});
 		}
 		else {	   
-			addUrlsToDl();		
+			addUrlsToHeader();		
 		}
 	}
 }; 
 
-function addUrlsToDl() {
+function addUrlsToHeader() {
 	// Selecteer de eerste <dl> in het document
 	const dl = document.querySelector('dl');
 
