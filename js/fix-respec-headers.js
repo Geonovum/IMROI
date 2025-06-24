@@ -72,9 +72,8 @@ function addUrlsToDl() {
 			a.className = 'u-url status';
 		}
 
-		dd.appendChild(a);
+		dd.appendChild(a);	
 		
-		console.log(dl);
 
 		// Prepend in omgekeerde volgorde
 		dl.insertBefore(dd, dl.firstChild);
