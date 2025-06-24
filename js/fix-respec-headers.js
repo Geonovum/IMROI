@@ -23,7 +23,7 @@ function addUrlsToDl() {
 	
 	const specType = `${respecConfig.specType}`.toLowerCase();
 	
-	if (respecConfig.specStatus !== 'wv' ||  respecConfig.specStatus !== 'WV' ) {
+	if (respecConfig.specStatus !== 'wv' &&  respecConfig.specStatus !== 'WV' ) {
 		const rawPublishDate = respecConfig.publishISODate.toLocaleString().split('T')[0]		
 							?? respecConfig.dashDate
 							?? new Date().toISOString().split('T')[0];
@@ -34,6 +34,9 @@ function addUrlsToDl() {
 		const docName = `${specStatus}-${specType}-${respecConfig.shortName}-${publishDate}`;
 
 		items.push({ term: 'Deze versie:', url: `https://docs.geostandaarden.nl/${respecConfig.pubDomain}/${docName}` });
+	}
+	else {
+		items.push({ term: 'Deze versie:', url: `${respecConfig.thisVersion}` });
 	}
 
 	if (respecConfig.previousPublishDate && respecConfig.previousMaturity) {
