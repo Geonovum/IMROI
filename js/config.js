@@ -69,10 +69,7 @@ let respecConfig = {
       name: "Joachim Tempelaars",
       company: "Veiligheidsregio Brabant-Zuidoost", 
     },
-	  {
-      name: "Joost Deen",
-      company: "Safety Consulting and Technology",
-    },
+	 
 	    {
       name: "Mark Twisk",
       company: "Brandweer Flevoland",  
