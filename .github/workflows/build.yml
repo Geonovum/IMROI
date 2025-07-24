@@ -69,6 +69,7 @@ jobs:
             static/*.pdf
             media/**/*
             js/**/*
+            data/**/*
 
   wcag:
     name: WCAG Accessibility Check
