@@ -1,0 +1,146 @@
+name: Build / check
+on:
+  workflow_call:
+jobs:
+  snapshot:
+    name: Generate Snapshot
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Prepare static directory
+        run: mkdir -p static
+
+      - name: Generate HTML snapshot
+        run: npx respec --localhost --src index.html --out snapshot.html
+
+      - name: Validate HTML
+        run: |
+          npm install -g nu-html-checker
+          nu-html-checker snapshot.html
+
+      - name: Check for alternateFormats
+        id: config
+        run: |
+          echo "grep=false" >> $GITHUB_OUTPUT
+          if grep -q 'alternateFormats' ./js/config.js; then
+            if grep -Pzoq 'alternateFormats:\s*\[\s*\{\s*label:\s*".+?",\s*uri:\s*".+?"\s*\}\s*\]' ./js/config.js; then
+              echo "grep=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Copy pdf.js if needed
+        if: ${{ steps.config.outputs.grep == 'true' }}
+        run: cp .github/workflows/pdf.js .
+
+      - name: Generate PDF(s)
+        if: ${{ steps.config.outputs.grep == 'true' }}
+        run: |
+          cp ./js/config.js config.js
+          echo "module.exports = { respecConfig };" >> config.js
+          echo "var window = {respecMermaid:{createFigures:null}};" | cat - config.js > temp && mv temp config.js
+          npm install puppeteer
+          python3 -m http.server 8080 &
+          rm -f *.pdf
+          node pdf.js
+          mv *.pdf static/
+
+      - name: Commit snapshot & PDFs
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch --all
+          git add snapshot.html
+          if [[ "${{ steps.config.outputs.grep }}" == "true" ]] && ls static/*.pdf 1>/dev/null 2>&1; then
+            mv static/*.pdf .
+            git add *.pdf
+          fi
+          git commit -m "Snapshot gegenereerd" || echo "No changes to commit"
+          git push
+
+      - name: Upload snapshot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot
+          path: |
+            snapshot.html
+            static/*.pdf
+            media/**/*
+            js/**/*
+
+  wcag:
+    name: WCAG Accessibility Check
+    needs: snapshot
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download snapshot artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: snapshot
+          path: .
+
+      - name: Install pa11y
+        run: npm install -g pa11y
+
+      - name: Run WCAG2AA check
+        run: |
+          pa11y snapshot.html \
+            --ignore WCAG2AA.Principle4.Guideline4_1.4_1_1.F77
+
+  links:
+    name: Link Validation
+    needs: snapshot
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download snapshot artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: snapshot
+          path: .
+
+      - name: Serve snapshot over HTTP
+        uses: Eun/http-server-action@v1
+        with:
+          directory: ${{ github.workspace }}
+          port: 8080
+          content-types: |
+            {
+              "css": "text/css",
+              "html": "text/html",
+              "ico": "image/x-icon",
+              "jpeg": "image/jpeg",
+              "jpg": "image/jpeg",
+              "js": "text/javascript",
+              "json": "application/json",
+              "png": "image/png",
+              "svg": "image/svg+xml",
+              "txt": "text/plain",
+              "xml": "text/xml"
+            }
+
+      - name: Wait for server readiness
+        run: |
+          sleep 10
+          curl --fail http://localhost:8080/snapshot.html
+
+      - name: Install Muffet via Go
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y golang-go
+          go install github.com/raviqqe/muffet@latest
+          echo "${HOME}/go/bin" >> $GITHUB_PATH
+
+      - name: Check links with Muffet
+        run: |
+          muffet \
+            --exclude '\.pdf$'  \
+            --exclude '^https://gitdocumentatie.*' \
+            --exclude '^https://docs.geostandaarden.*' \
+            --exclude '.*localhost.*' \
+            --header 'user-agent:Curl' \
+            --ignore-fragments \
+            --one-page-only \
+            http://localhost:8080/snapshot.html \
+            --buffer-size 8192
