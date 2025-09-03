@@ -66,37 +66,26 @@ uitbreidingen van het informatiemodel.
 Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
-![Afbeelding met tekst, diagram, Plan, Technische tekening Automatisch
-gegenereerde beschrijving](media/c8df6be1adb377a06bf15287bcebe1de.png)
+![Afbeelding met tekst, diagram, Plan, Parallel Door AI gegenereerde inhoud is
+mogelijk onjuist.](media/bbf5d029d078e2015ef1f2c4e0e3c281.png)
 
-| IMROI                                  | NEN3610                                  |
-|----------------------------------------|------------------------------------------|
-| RepressiefObject                       | VirtueleRuimte                           |
-| Terrein                                | Begroeiing; OppervlakteWater; Verharding |
-| Gebouw                                 | Gebouw                                   |
-| Dakconstructie                         | Constructie                              |
-| Bouwlaag                               | Constructie                              |
-| Ruimte                                 | Constructie                              |
-| *InformatieObject*                     | *VirtueleRuimte*                         |
-| Aanwezigen                             | *VirtueleRuimte*                         |
-| BHVOrganisatie                         | *VirtueleRuimte*                         |
-| Contactpersoon                         | *VirtueleRuimte*                         |
-| Sectoren                               | *VirtueleRuimte*                         |
-| Opstelplaats                           | *VirtueleRuimte*                         |
-| Bereikbaarheid                         | *VirtueleRuimte*                         |
-| Toegang                                | Constructie; *VirtueleRuimte*            |
-| VindplaatsSleutel                      | *VirtueleRuimte*                         |
-| Dreiging                               | *VirtueleRuimte*                         |
-| Opslagvoorziening                      | Constructie                              |
-| Schadecirkel                           | *VirtueleRuimte*                         |
-| Point of interest                      | *VirtueleRuimte*                         |
-| Veiligheidsvoorziening                 | *VirtueleRuimte*                         |
-| TechnischeVeiligheidsvoorziening       | *VirtueleRuimte*                         |
-| BouwkundigeVeiligheidsvoorziening      | *VirtueleRuimte*                         |
-| OrganisatorischeVeiligheidsvoorziening | *VirtueleRuimte*                         |
-| Beheersmaatregel                       | *VirtueleRuimte*                         |
-| GebiedsgerichteAanpak                  | *VirtueleRuimte*                         |
-| Risicocontouren                        | *VirtueleRuimte*                         |
+| IMROI                  | NEN3610                                  |
+|------------------------|------------------------------------------|
+| RepressiefObject       | VirtueleRuimte                           |
+| Terrein                | Begroeiing; OppervlakteWater; Verharding |
+| Gebouw                 | Gebouw                                   |
+| Bouwlaag               | Constructie                              |
+| Ruimte                 | Constructie                              |
+| *InformatieObject*     | *VirtueleRuimte*                         |
+| Opstelplaats           | *VirtueleRuimte*                         |
+| Bereikbaarheid         | *VirtueleRuimte*                         |
+| ImpactZone             | *VirtueleRuimte*                         |
+| Referentiepunt         | *VirtueleRuimte*                         |
+| Beheersmaatregel       | *VirtueleRuimte*                         |
+| Toegang                | Constructie                              |
+| VindplaatsSleutel      | Constructie                              |
+| Opslagvoorziening      | Constructie                              |
+| Veiligheidsvoorziening | Constructie                              |
 
 ### Metamodel voor Informatiemodelering (MIM)
 

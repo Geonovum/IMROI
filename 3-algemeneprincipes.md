@@ -30,20 +30,20 @@ passende maatregelen te nemen.
 
 ## Landelijke voorziening
 
-De landelijke voorziening DATA4OOV, beheerd door het Nationaal Instituut Publieke
-Veiligheid (NIPV), is verantwoordelijk voor de opslag en verdere distributie van
-de IMROI-objecten naar de andere veiligheidsregio's. Dit zorgt ervoor dat de
-gegevens op een gestandaardiseerde en consistente manier worden uitgewisseld
-tussen de verschillende veiligheidsregio's.
+De landelijke voorziening DATA4OOV, beheerd door het Nationaal Instituut
+Publieke Veiligheid (NIPV), is verantwoordelijk voor de opslag en verdere
+distributie van de IMROI-objecten naar de andere veiligheidsregio's. Dit zorgt
+ervoor dat de gegevens op een gestandaardiseerde en consistente manier worden
+uitgewisseld tussen de verschillende veiligheidsregio's.
 
 De landelijke voorziening speelt een cruciale rol in het beschikbaar maken van
 informatie over de objecten binnen de veiligheidsketen, waardoor deze informatie
 landelijk toegankelijk is en kan worden gebruikt voor verschillende
 toepassingen.
 
-De Veiligheidsregio conformeert zich aan het IMROI als het om data
-deling met het NIPV gaat. In samenwerking met de eigen softwareleverancier zorgt
-de Veiligheidsregio ervoor dat de gegevens volgens de vastgestelde
+De Veiligheidsregio conformeert zich aan het IMROI als het om data deling met
+het NIPV gaat. In samenwerking met de eigen softwareleverancier zorgt de
+Veiligheidsregio ervoor dat de gegevens volgens de vastgestelde
 uitwisselstandaard beschikbaar worden gesteld aan de landelijke voorziening van
 het NIPV.
 
@@ -69,34 +69,23 @@ horizontale component.
 
 Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
 
-| Objecttype                             | Geometrietype |
-|----------------------------------------|---------------|
-| Repressief­Object                      | Punt          |
-| Terrein                                | Multivlak     |
-| Gebouw                                 | Vlak          |
-| Dakconstructie                         | *Geen*        |
-| Bouwlaag                               | Multivlak     |
-| Ruimte                                 | Multivlak     |
-| *InformatieObject*                     | *Geen*        |
-| Aanwezigen                             | *Geen*        |
-| BHVOrganisatie                         | *Geen*        |
-| Contactpersoon                         | *Geen*        |
-| Sectoren                               | Multivlak     |
-| Opstelplaats                           | Punt          |
-| Bereikbaarheid                         | Multilijn     |
-| Toegang                                | Multipunt     |
-| VindplaatsSleutel                      | Punt          |
-| Dreiging                               | Punt          |
-| Opslagvoorziening                      | Punt          |
-| Schadecirkel                           | Punt          |
-| Point of interest                      | Multipunt     |
-| *Veiligheidsvoorziening*               | *Geen*        |
-| TechnischeVeiligheidsvoorziening       | Punt          |
-| BouwkundigeVeiligheidsvoorziening      | Lijn          |
-| OrganisatorischeVeiligheidsvoorziening | *Geen*        |
-| Beheersmaatregel                       | Punt          |
-| GebiedsgerichteAanpak                  | Punt          |
-| Risicocontouren                        | Multilijn     |
+| Objecttype             | Geometrietype        |
+|------------------------|----------------------|
+| Repressief­Object      | Punt                 |
+| Terrein                | Multivlak            |
+| Gebouw                 | Vlak of Multivlak    |
+| Bouwlaag               | Multivlak            |
+| Ruimte                 | Multivlak            |
+| *InformatieObject*     | *Geen*               |
+| Opstelplaats           | Punt                 |
+| Bereikbaarheid         | Lijn                 |
+| Toegang                | Punt                 |
+| VindplaatsSleutel      | Punt of Lijn         |
+| ImpactZone             | Punt of Lijn of Vlak |
+| Opslagvoorziening      | Punt                 |
+| Referentiepunt         | Punt                 |
+| Veiligheidsvoorziening | Punt of Lijn         |
+| Beheersmaatregel       | Punt of Lijn         |
 
 ## Identificatie en registratiegegevens
 
@@ -237,45 +226,36 @@ informatieobjecten. Niet elk informatieobject is van toepassing voor elk type
 RepressiefObject of Bouwlaag. Om de dataconsistentie te waarborgen, worden de
 volgende regels toegepast:
 
--   BHVOrganisatie als Informatieobject komt alleen voor bij een Repressief
-    Object van het type Gebouw, Evenement of Infra, of bij Bouwlaag.
+-   BHVOrganisatie wordt optioneel als gegevensgroep vastgelegd bij een
+    Repressief Object van het type Gebouw, Evenement of Infra, of bij Bouwlaag.
 
--   Bouwkundige veiligheidsvoorzieningen als Informatieobject komt voor bij een
-    Repressief Object van het type Gebouw, of bij Bouwlaag.
+-   Veiligheidsvoorzieningen met een bouwkundig karakter komen als
+    Informatieobject voor bij een Repressief Object van het type Gebouw, of bij
+    Bouwlaag.
 
--   Points of Interest als informatieobject komt alleen voor bij Repressief
-    Object van het type Natuur.
+-   Referentiepunt als informatieobject komt alleen voor bij Repressief Object
+    van het type Natuur.
 
--   GebiedsgerichteAanpak als informatieobject komt alleen voor bij Repressief
-    Object van het type Natuur.
+-   Beheersmaatregel als informatieobject komt alleen voor bij Repressief Object
+    van het type Natuur of Water.
 
--   Beheersmaatregel als informatieobject komt alleen voor bij het
-    RepressiefObject van het type Water.
+-   Impactzone met het karakter van risicocontouren komt als informatieobject
+    alleen voor bij het RepressiefObject van het type Natuur, Water of Infra.
 
--   Risicocontouren als informatieobject komt alleen voor bij het
-    RepressiefObject van het type Natuur, Water of Infra.
-
-De onderstaande tabel geeft aan welke informatieobjecten mogen worden gekoppeld
-aan welk type RepressiefObject of Bouwlaag.
+De onderstaande tabel geeft aan welke gegevengoepen of informatieobjecten mogen
+worden gekoppeld aan welk type RepressiefObject of Bouwlaag.
 
 | *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* | *Bouwlaag* |
 |--------------------------------------------|----------|----------|---------|-------------|---------|------------|
 | Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       | ×          |
 | BHVOrganisatie                             | ×        |          |         | ×           | ×       | ×          |
 | Contactpersoon                             | ×        | ×        | ×       | ×           | ×       | ×          |
-| Sectoren                                   | ×        | ×        | ×       | ×           | ×       | ×          |
 | Opstelplaats                               | ×        | ×        | ×       | ×           | ×       | ×          |
 | Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       | ×          |
 | Toegang                                    | ×        | ×        | ×       | ×           | ×       | ×          |
 | VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       | ×          |
-| Dreiging                                   | ×        | ×        | ×       | ×           | ×       | ×          |
+| ImpactZone                                 | ×        | ×        | ×       | ×           | ×       | ×          |
 | Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       | ×          |
-| Schadecirkel                               | ×        | ×        | ×       | ×           | ×       | ×          |
-| Points of interest                         |          | ×        |         |             |         |            |
-| *Veiligheidsvoorziening*                   | ×        | ×        | ×       | ×           | ×       | ×          |
-| TechnischeVeiligheidsvoorziening           | ×        | ×        | ×       | ×           | ×       | ×          |
-| BouwkundigeVeiligheidsvoorziening          | ×        |          |         |             |         | ×          |
-| OrganisatorischeVeiligheidsvoorziening     | ×        | ×        | ×       | ×           | ×       | ×          |
+| Referentiepunt                             |          | ×        |         |             |         |            |
+| Veiligheidsvoorziening                     | ×        | ×        | ×       | ×           | ×       | ×          |
 | Beheersmaatregel                           |          |          | ×       |             |         |            |
-| GebiedsgerichteAanpak                      |          | ×        |         |             |         |            |
-| Risicocontouren                            |          | ×        | ×       |             | ×       |            |
