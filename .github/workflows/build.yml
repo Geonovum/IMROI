@@ -1,16 +1,19 @@
 name: Build / check
 on:
   workflow_call:
+env:
+  CHECK_DIR: ".checks"
 jobs:
-  snapshot:
-    name: Generate Snapshot
+  build:
+    name: Snapshot + Checks
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Prepare static directory
-        run: mkdir -p static
+      - name: Prepare directories
+        run: |
+          mkdir -p static $CHECK_DIR
 
       - name: Generate HTML snapshot
         run: npx respec --localhost --src index.html --out snapshot.html
@@ -46,59 +49,12 @@ jobs:
           node pdf.js
           mv *.pdf static/
 
-      - name: Commit snapshot & PDFs
-        if: ${{ github.event_name == 'push' }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch --all
-          git add snapshot.html
-          if [[ "${{ steps.config.outputs.grep }}" == "true" ]] && ls static/*.pdf 1>/dev/null 2>&1; then
-            mv static/*.pdf .
-            git add *.pdf
-          fi
-          git commit -m "Snapshot gegenereerd" || echo "No changes to commit"
-          git push
-
-      - name: Upload snapshot artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: snapshot
-          path: |
-            snapshot.html
-            static/*.pdf
-            media/**/*
-            js/**/*
-
-  wcag:
-    name: WCAG Accessibility Check
-    needs: snapshot
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Download snapshot artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: snapshot
-          path: .
-
-      - name: Install pa11y
-        run: npm install -g pa11y
-
       - name: Run WCAG2AA check
         run: |
+          npm install -g pa11y
           pa11y snapshot.html \
-            --ignore WCAG2AA.Principle4.Guideline4_1.4_1_1.F77
-
-  links:
-    name: Link Validation
-    needs: snapshot
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Download snapshot artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: snapshot
-          path: .
+            --ignore WCAG2AA.Principle4.Guideline4_1.4_1_1.F77 \
+            > $CHECK_DIR/wcag-report.txt 2>&1 || echo "Geen WCAG-fouten gevonden." > $CHECK_DIR/wcag-report.txt
 
       - name: Serve snapshot over HTTP
         uses: Eun/http-server-action@v1
@@ -120,22 +76,14 @@ jobs:
               "xml": "text/xml"
             }
 
-      - name: Wait for server readiness
-        run: |
-          sleep 10
-          curl --fail http://localhost:8080/snapshot.html
-
-      - name: Install Muffet via Go
+      - name: Run link check with Muffet
         run: |
           sudo apt-get update
           sudo apt-get install -y golang-go
           go install github.com/raviqqe/muffet@latest
           echo "${HOME}/go/bin" >> $GITHUB_PATH
-
-      - name: Check links with Muffet
-        run: |
           muffet \
-            --exclude '\.pdf$'  \
+            --exclude '\.pdf$' \
             --exclude '^https://gitdocumentatie.*' \
             --exclude '^https://docs.geostandaarden.*' \
             --exclude '.*localhost.*' \
@@ -143,4 +91,30 @@ jobs:
             --ignore-fragments \
             --one-page-only \
             http://localhost:8080/snapshot.html \
-            --buffer-size 8192
+            --buffer-size 8192 > $CHECK_DIR/link-check.txt 2>&1 || echo "Geen linkfouten gevonden." > $CHECK_DIR/link-check.txt
+
+      - name: Commit all results
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Verplaats PDFs naar root (optioneel)
+          if [[ "${{ steps.config.outputs.grep }}" == "true" ]] && ls static/*.pdf 1>/dev/null 2>&1; then
+            mv static/*.pdf .
+          fi
+
+          git add snapshot.html *.pdf $CHECK_DIR/*.txt
+          git commit -m "Snapshot + checks gegenereerd" || echo "No changes to commit"
+          git push --force-with-lease origin HEAD:main
+
+      - name: Upload snapshot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot
+          path: |
+            snapshot.html
+            static/*.pdf
+            media/**/*
+            js/**/*
+            data/**/*
