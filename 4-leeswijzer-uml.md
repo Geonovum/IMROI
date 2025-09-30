@@ -40,7 +40,7 @@ vormen.
 Het verschil tussen attributen en gegevensgroepen is zichtbaar via het
 *stereotype* (bijvoorbeeld \<\<gegevensgroep\>\>).
 
-Elk attribuut heeft een *datatype*, zoals onder meer ‘CharacterString**’**
+Elk attribuut heeft een *datatype*, zoals onder meer ‘CharacterString\*\*’\*\*
 (tekstwaarde), ‘Integer’ (geheel getal) of verwijzing naar een waardenlijst.
 
 **Waardenlijsten**
@@ -106,6 +106,22 @@ Bij een *keuzerelatie* kan er gekozen worden tussen meerdere doelobjecttypen.
 Bijvoorbeeld: in het IMROI kan Gebouw een relatie hebben met een BAG Pand of een
 BGT OverigBouwwerk.
 
+**Kleurgebruik UML-diagrammen**
+
+Het kleurgebruik onderscheidt IMROI-specifieke objecten van externe objecttypen,
+zodat de gebruiker in één oogopslag kan zien welke elementen intern gedefinieerd
+zijn en welke uit andere standaarden komen. ![Afbeelding met tekst,
+schermopname, scherm, software Door AI gegenereerde inhoud is mogelijk
+onjuist.](media/ceeb398fbffb4aab31d49892f7f72dcc.png)
+
+-   Grijs / Wit: Klassen die afkomstig zijn uit externe informatiemodellen,
+    zoals NEN3610, IMBAG of IMGeo. Deze worden gebruikt ter referentie en vallen
+    buiten het IMROI-domein.
+
+-   Overige kleuren: Objecten binnen het thema *RepressiefObject*, zoals
+    *Terrein* en *Gebouw en* informatieobjecten die specifiek binnen het
+    IMROI-thema zijn gedefinieerd.
+
 **Samenvatting**
 
 -   Elk vak in het diagram stelt een objectklasse voor, die eigenschappen en
@@ -127,7 +143,10 @@ BGT OverigBouwwerk.
 
 -   Keuzes in datatypen of relaties bieden flexibiliteit binnen het model.
 
-    Door deze richtlijnen te volgen, kan een UML-klassendiagram effectief worden
-    geïnterpreteerd. Voor meer informatie over gegevensmodelering, zie het
-    [Metamodel voor Informatie Modelering
-    (MIM)](https://docs.geostandaarden.nl/mim/mim/).
+-   Kleurgebruik in UML geeft onderscheid tussen eigen IMROI-objecten en
+    objecten in externe informatiemodellen.
+
+Door deze richtlijnen te volgen, kan een UML-klassendiagram effectief worden
+geïnterpreteerd. Voor meer informatie over gegevensmodelering, zie het
+[Metamodel voor Informatie Modelering
+(MIM)](https://docs.geostandaarden.nl/mim/mim/).

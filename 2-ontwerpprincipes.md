@@ -67,7 +67,7 @@ Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
 ![Afbeelding met tekst, diagram, Plan, Parallel Door AI gegenereerde inhoud is
-mogelijk onjuist.](media/30320d440aa14b607769030f53dcd32c.png)
+mogelijk onjuist.](media/c75af2329fc155dbd1cd03848a391d2e.png)
 
 | IMROI              | NEN3610                                  |
 |--------------------|------------------------------------------|
