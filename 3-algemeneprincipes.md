@@ -69,23 +69,21 @@ horizontale component.
 
 Tot het IMROI behoren de volgende objecten met de volgende geometrietypen.
 
-| Objecttype             | Geometrietype        |
-|------------------------|----------------------|
-| Repressief­Object      | Punt                 |
-| Terrein                | Multivlak            |
-| Gebouw                 | Vlak of Multivlak    |
-| Bouwlaag               | Multivlak            |
-| Ruimte                 | Multivlak            |
-| *InformatieObject*     | *Geen*               |
-| Opstelplaats           | Punt                 |
-| Bereikbaarheid         | Lijn                 |
-| Toegang                | Punt                 |
-| VindplaatsSleutel      | Punt of Lijn         |
-| ImpactZone             | Punt of Lijn of Vlak |
-| Opslagvoorziening      | Punt                 |
-| Referentiepunt         | Punt                 |
-| Veiligheidsvoorziening | Punt of Lijn         |
-| Beheersmaatregel       | Punt of Lijn         |
+| Objecttype         | Geometrietype     |
+|--------------------|-------------------|
+| Repressief­Object  | Punt              |
+| Terrein            | Multivlak         |
+| Gebouw             | Vlak of Multivlak |
+| Verdieping         | Multivlak         |
+| Ruimte             | Multivlak         |
+| *InformatieObject* | *Geen*            |
+| GevaarlijkeStof    | Punt              |
+| Toegang            | Punt              |
+| Voorziening        | Punt              |
+| Scheiding          | Lijn              |
+| Dreiging           | Punt              |
+| Bereikbaarheid     | Lijn              |
+| Opstelplaats       | Punt              |
 
 ## Identificatie en registratiegegevens
 
@@ -217,45 +215,3 @@ versie van het IMROI-object geldig is.
 De tijdstippen voor objectBegintijd en objectEindtijd worden bij een
 IMROI-object vastgelegd met een nauwkeurigheid tot op de dag, bijvoorbeeld
 2024-04-26.
-
-## RepressiefObject en informatieobjecten
-
-Een RepressiefObject is van het type Gebouw, Natuur, Water, Evenement of Infra.
-In het IMROI worden vanuit het RepressiefObject of Bouwlaag relaties gelegd met
-informatieobjecten. Niet elk informatieobject is van toepassing voor elk type
-RepressiefObject of Bouwlaag. Om de dataconsistentie te waarborgen, worden de
-volgende regels toegepast:
-
--   BHVOrganisatie wordt optioneel als gegevensgroep vastgelegd bij een
-    Repressief Object van het type Gebouw, Evenement of Infra, of bij Bouwlaag.
-
--   Veiligheidsvoorzieningen met een bouwkundig karakter komen als
-    Informatieobject voor bij een Repressief Object van het type Gebouw, of bij
-    Bouwlaag.
-
--   Referentiepunt als informatieobject komt alleen voor bij Repressief Object
-    van het type Natuur.
-
--   Beheersmaatregel als informatieobject komt alleen voor bij Repressief Object
-    van het type Natuur of Water.
-
--   Impactzone met het karakter van risicocontouren komt als informatieobject
-    alleen voor bij het RepressiefObject van het type Natuur, Water of Infra.
-
-De onderstaande tabel geeft aan welke gegevengoepen of informatieobjecten mogen
-worden gekoppeld aan welk type RepressiefObject of Bouwlaag.
-
-| *InformatieObject \| TypeRepressiefObject* | *Gebouw* | *Natuur* | *Water* | *Evenement* | *Infra* | *Bouwlaag* |
-|--------------------------------------------|----------|----------|---------|-------------|---------|------------|
-| Aanwezigen                                 | ×        | ×        | ×       | ×           | ×       | ×          |
-| BHVOrganisatie                             | ×        |          |         | ×           | ×       | ×          |
-| Contactpersoon                             | ×        | ×        | ×       | ×           | ×       | ×          |
-| Opstelplaats                               | ×        | ×        | ×       | ×           | ×       | ×          |
-| Bereikbaarheid                             | ×        | ×        | ×       | ×           | ×       | ×          |
-| Toegang                                    | ×        | ×        | ×       | ×           | ×       | ×          |
-| VindplaatsSleutel                          | ×        | ×        | ×       | ×           | ×       | ×          |
-| ImpactZone                                 | ×        | ×        | ×       | ×           | ×       | ×          |
-| Opslagvoorziening                          | ×        | ×        | ×       | ×           | ×       | ×          |
-| Referentiepunt                             |          | ×        |         |             |         |            |
-| Veiligheidsvoorziening                     | ×        | ×        | ×       | ×           | ×       | ×          |
-| Beheersmaatregel                           |          |          | ×       |             |         |            |

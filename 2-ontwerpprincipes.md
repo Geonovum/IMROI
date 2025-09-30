@@ -18,9 +18,9 @@ object, zoals sleutellocaties, toegang tot terreinen, opslagvoorzieningen voor
 gevaarlijke stoffen en veiligheidsvoorzieningen. Deze informatieobjecten hebben
 vaak hun eigen geometrie.
 
-![Afbeelding met tekst, schermopname, diagram, Plan Automatisch gegenereerde
-beschrijving](media/a0a266b07bd0b90ab3db2dbc90fe876b.png)Een kenmerk van een
-repressief object is dat de verantwoordelijkheid voor het verzamelen van
+![Afbeelding met tekst, diagram, schermopname, Plan Door AI gegenereerde inhoud
+is mogelijk onjuist.](media/e7c34e87871304b75e118e719f5ae15c.png)Een kenmerk van
+een repressief object is dat de verantwoordelijkheid voor het verzamelen van
 informatie over dat object bij één veiligheidsregio ligt. Echter, vanwege de
 mogelijkheid van inzet van eenheden over de regiogrens heen in een andere regio,
 is het noodzakelijk om informatie over objecten te delen met andere
@@ -67,25 +67,23 @@ Onderstaande afbeelding en tabel tonen de semantische relaties tussen NEN3610 en
 IMROI-objecten.
 
 ![Afbeelding met tekst, diagram, Plan, Parallel Door AI gegenereerde inhoud is
-mogelijk onjuist.](media/bbf5d029d078e2015ef1f2c4e0e3c281.png)
+mogelijk onjuist.](media/30320d440aa14b607769030f53dcd32c.png)
 
-| IMROI                  | NEN3610                                  |
-|------------------------|------------------------------------------|
-| RepressiefObject       | VirtueleRuimte                           |
-| Terrein                | Begroeiing; OppervlakteWater; Verharding |
-| Gebouw                 | Gebouw                                   |
-| Bouwlaag               | Constructie                              |
-| Ruimte                 | Constructie                              |
-| *InformatieObject*     | *VirtueleRuimte*                         |
-| Opstelplaats           | *VirtueleRuimte*                         |
-| Bereikbaarheid         | *VirtueleRuimte*                         |
-| ImpactZone             | *VirtueleRuimte*                         |
-| Referentiepunt         | *VirtueleRuimte*                         |
-| Beheersmaatregel       | *VirtueleRuimte*                         |
-| Toegang                | Constructie                              |
-| VindplaatsSleutel      | Constructie                              |
-| Opslagvoorziening      | Constructie                              |
-| Veiligheidsvoorziening | Constructie                              |
+| IMROI              | NEN3610                                  |
+|--------------------|------------------------------------------|
+| RepressiefObject   | VirtueleRuimte                           |
+| Terrein            | Begroeiing; OppervlakteWater; Verharding |
+| Gebouw             | Gebouw                                   |
+| Verdieping         | Constructie                              |
+| Ruimte             | Constructie                              |
+| *InformatieObject* | *VirtueleRuimte*                         |
+| GevaarlijkeStof    | Constructie                              |
+| Toegang            | Constructie                              |
+| Voorziening        | Constructie                              |
+| Scheiding          | Constructie                              |
+| Dreiging           | *VirtueleRuimte*                         |
+| Bereikbaarheid     | *VirtueleRuimte*                         |
+| Opstelplaats       | *VirtueleRuimte*                         |
 
 ### Metamodel voor Informatiemodelering (MIM)
 
@@ -127,8 +125,6 @@ GM_Surface, aangeduid.
 | Lijn          | GM_Curve        |
 | Punt          | GM_Point        |
 | Multivlak     | GM_MultiSurface |
-| Multilijn     | GM_MultiCurve   |
-| Multipunt     | GM_MultiPoint   |
 
 ## Samenhang met andere registraties
 
