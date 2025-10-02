@@ -16,11 +16,11 @@ Hieronder lees je hoe je een UML-klassendiagram kunt interpreteren.
 Elk vak of tabel in het diagram stelt een *objectklasse* of *objecttype* voor.
 Een objectklasse beschrijft een groep objecten met gedeelde eigenschappen en
 gedrag. Voorbeelden van objecttypen in het IMROI zijn RepressiefObject,
-InformatieObject, Veiligheidsvoorziening.
+InformatieObject, of Vvoorziening.
 
 Een *concreet objecttype* stelt een objectklasse voor waarvan daadwerkelijk
 objecten kunnen worden gemaakt. Dit zijn de typen die in de praktijk gebruikt
-worden, zoals RepressiefObject, Bouwlaag, en Veiligheidsvoorziening.
+worden, zoals RepressiefObject, Verdieping, en Voorziening.
 
 Een *abstract objecttype* is bedoeld als een algemene beschrijving en wordt
 gebruikt als basis voor andere objecttypen. Er worden geen objecten rechtstreeks
@@ -64,15 +64,16 @@ model.
 
 *Associaties* zijn relaties tussen objectklassen, die worden weergegeven met
 lijnen. Een pijl geeft de richting van de relatie aan (van bron naar doel).
-Bijvoorbeeld in de relatie ‘Bouwlaag maaktOnderdeelUitVan Gebouw’ is ‘Bouwlaag’
-het bronobject en ‘Gebouw’ het doelobject. In een uitwisseling wordt een
-verwijzing naar het doelobject opgenomen bij het bronobject, vaak met de naam
-van de relatierol (bijvoorbeeld gerelateerdeBouwlaag).
+Bijvoorbeeld in de relatie ‘Verdieping maaktOnderdeelUitVan Gebouw’ is
+‘Verdieping’ het bronobject en ‘Gebouw’ het doelobject. In een uitwisseling
+wordt een verwijzing naar het doelobject opgenomen bij het bronobject, vaak met
+de naam van de relatierol (bijvoorbeeld gerelateerdeVerdieping of korter
+Verdieping).
 
 *Generalisaties* zijn relaties die worden weergegeven met een lijn met een holle
 driehoek en duiden op een "is-een"-relatie. Bijvoorbeeld: RepressiefObject is
-een IMROI-object en Veiligheidsvoorziening is een InformatieObject. Een
-subklasse erft eigenschappen van de superklasse.
+een IMROI-object en Voorziening is een InformatieObject. Een subklasse erft
+eigenschappen van de superklasse.
 
 **Kardinaliteit en verplichting**
 
@@ -99,8 +100,8 @@ Een UML-klassendiagram kan keuzemogelijkheden bevatten. Dit wordt aangegeven met
 een stereotype \<\<Keuze\>\>.
 
 Bij een *keuze-datatype* kan een attribuut een waarde hebben uit een beperkte
-set datatypen. Bijvoorbeeld: het attribuut geometrie bij Veiligheidsvoorziening
-kan een keuze zijn tussen punt- of lijngeometrie (datatype PuntOfLijn).
+set datatypen. Bijvoorbeeld: het attribuut geometrie kan een keuze zijn tussen
+punt- of lijngeometrie (datatype PuntOfLijn).
 
 Bij een *keuzerelatie* kan er gekozen worden tussen meerdere doelobjecttypen.
 Bijvoorbeeld: in het IMROI kan Gebouw een relatie hebben met een BAG Pand of een
