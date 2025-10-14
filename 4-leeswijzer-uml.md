@@ -16,7 +16,7 @@ Hieronder lees je hoe je een UML-klassendiagram kunt interpreteren.
 Elk vak of tabel in het diagram stelt een *objectklasse* of *objecttype* voor.
 Een objectklasse beschrijft een groep objecten met gedeelde eigenschappen en
 gedrag. Voorbeelden van objecttypen in het IMROI zijn RepressiefObject,
-InformatieObject, of Vvoorziening.
+InformatieObject, of Voorziening.
 
 Een *concreet objecttype* stelt een objectklasse voor waarvan daadwerkelijk
 objecten kunnen worden gemaakt. Dit zijn de typen die in de praktijk gebruikt
