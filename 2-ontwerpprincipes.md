@@ -46,7 +46,7 @@ passende maatregelen te nemen.
 
 Het Informatiemodel Repressieve Object Informatie (IMROI) is gemodelleerd op
 basis van het [Basismodel
-Geo-informatie](https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen/basismodel-geo-informatie-nen3610),
+Geo-informatie](https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen),
 beter bekend als NEN3610. Deze standaard biedt een referentiekader voor het
 modelleren en uitwisselen van geografische informatie in Nederland. Het IMROI is
 gebaseerd op versie 2022 van de NEN3610-standaard.
@@ -141,9 +141,9 @@ panden en adresseerbare objecten in Nederland. Deze registratie biedt
 gedetailleerde informatie over de fysieke eigenschappen en locaties van
 gebouwen, waaronder hun adresgegevens, geometrie en functionele status.
 
-Voor meer informatie over het informatiemodel BAG, zie: [Gegevenscatalogus
-Basisregistratie Adressen en Gebouwen (IMBAG) \|
-Geonovum](https://www.geonovum.nl/geo-standaarden/informatiemodellen-nen3610-familie/gegevenscatalogus-basisregistratie-adressen-en)
+Voor meer informatie over het informatiemodel BAG, zie: [Catalogus
+Basisregistratie Adressen en Gebouwen 2018 \| (IMBAG) \|
+Geobasisregistraties](https://www.geobasisregistraties.nl/documenten/2018/03/12/catalogus-2018)
 
 Binnen het Informatiemodel Repressieve Object Informatie (IMROI) worden de
 gegevens over panden uit de BAG hergebruikt voor de registratie van repressieve
