@@ -5,7 +5,7 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Repressieve Object Informatie",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "cv",                   // Werkversie
+  specStatus: "vv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
